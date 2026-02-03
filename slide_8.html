@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PI GV And SOV Trend</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<style>
+        body { margin: 0; padding: 0; background-color: #333; height: 100vh; display: flex; justify-content: center; align-items: center; font-family: 'Inter', sans-serif; }
+        .slide-container { width: 1280px; height: 720px; background-color: #ffffff; position: relative; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5); display: flex; flex-direction: column; }
+        .top-accent { height: 7px; background-color: #00A3E0; width: 100%; flex-shrink: 0; }
+        .logo-1ds { position: absolute; top: 20px; right: 40px; height: 28px; width: auto; z-index: 10; }
+        
+        /* Table Styles */
+        .custom-table { border-collapse: collapse; width: 100%; font-size: 10px; }
+        .custom-table th { background-color: #00A3E0; color: white; padding: 2px 4px; font-weight: 600; text-align: center; border: 1px solid #e5e7eb; height: 28px; vertical-align: middle; white-space: nowrap; }
+        .custom-table td { padding: 2px 4px; border: 1px solid #e5e7eb; text-align: center; color: #1f2937; height: 22px; vertical-align: middle; white-space: nowrap; }
+        .section-header td { background-color: #F3F4F6; color: #00A3E0; font-weight: 700; text-align: left; padding-left: 10px; border-left: 4px solid #00A3E0; }
+        .first-col { font-weight: 600; text-align: left; padding-left: 8px; color: #374151; }
+        
+        /* Chart Containers */
+        .chart-box { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px; width: 100%; display: flex; flex-direction: column; }
+        .slide-title { font-size: 32px; font-weight: 700; color: #111827; }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="top-accent"></div>
+<img alt="1DS Logo" class="logo-1ds" src="https://www.genspark.ai/api/files/s/Tg0b2MKk"/>
+<!-- Header -->
+<div class="px-10 pt-6 pb-2">
+<h1 class="slide-title">PI GV And SOV Trend</h1>
+</div>
+<!-- Main Content -->
+<div class="flex px-10 flex-1 gap-4 pb-6 overflow-hidden">
+<!-- Left Column: Charts (42%) -->
+<div class="w-5/12 flex flex-col gap-3 h-full justify-between">
+<!-- Chart 1: PI Brand Absolute GV% -->
+<div class="chart-box flex-1 relative" style="min-height: 0;">
+<h3 class="text-xs font-bold text-gray-700 mb-1">PI Brand Absolute GV% vs Category GV</h3>
+<div class="w-full h-full" id="chart1"></div>
+</div>
+<!-- Chart 2: PI Brand AD GV% -->
+<div class="chart-box flex-1 relative" style="min-height: 0;">
+<h3 class="text-xs font-bold text-gray-700 mb-1">PI Brand AD GV%</h3>
+<div class="w-full h-full" id="chart2"></div>
+</div>
+<!-- Chart 3: SOV - PA VS Rank 1 -->
+<div class="chart-box flex-1 relative" style="min-height: 0;">
+<h3 class="text-xs font-bold text-gray-700 mb-1">SOV - PA VS Rank 1</h3>
+<div class="w-full h-full" id="chart3"></div>
+</div>
+</div>
+<!-- Right Column: Data Table (58%) -->
+<div class="w-7/12 h-full overflow-hidden relative bg-white rounded-lg border border-gray-200 p-1 flex flex-col">
+<div class="px-2 py-1 bg-gray-50 border-b border-gray-200 mb-1">
+<h3 class="text-sm font-bold text-gray-700">Past 6 Months BCG Trend</h3>
+</div>
+<div class="flex-1 overflow-auto pr-1">
+<table class="custom-table">
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 16%"/>
+<col style="width: 14%"/>
+<col style="width: 12%"/>
+<col style="width: 14%"/>
+<col style="width: 14%"/>
+<col style="width: 14%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Month</th>
+<th>Organic SOV</th>
+<th>Ad SOV</th>
+<th>CPC</th>
+<th>CVR</th>
+<th>CTR</th>
+<th>ACOS</th>
+</tr>
+</thead>
+<tbody>
+<!-- Branded -->
+<tr class="section-header"><td colspan="7">Branded</td></tr>
+<tr><td class="first-col">July</td><td>69.10%</td><td>23.60%</td><td>7.1</td><td>55.60%</td><td>4.40%</td><td>9.90%</td></tr>
+<tr><td class="first-col">Aug</td><td>67.10%</td><td>12.10%</td><td>4.5</td><td>35.00%</td><td>7.20%</td><td>8.40%</td></tr>
+<tr><td class="first-col">Sept</td><td>64.70%</td><td>6.60%</td><td>5.2</td><td>35.50%</td><td>8.20%</td><td>8.60%</td></tr>
+<tr><td class="first-col">Oct</td><td>63.40%</td><td>12.40%</td><td>5.4</td><td>47.10%</td><td>4.30%</td><td>7.20%</td></tr>
+<tr><td class="first-col">Nov</td><td>63.90%</td><td>10.40%</td><td>4.6</td><td>44.30%</td><td>6.10%</td><td>5.70%</td></tr>
+<tr><td class="first-col">Dec</td><td>64.80%</td><td>12.80%</td><td>4.3</td><td>44.00%</td><td>6.70%</td><td>5.70%</td></tr>
+<!-- Competitive -->
+<tr class="section-header"><td colspan="7">Competitive</td></tr>
+<tr><td class="first-col">July</td><td>17.00%</td><td>8.70%</td><td>15.8</td><td>38.70%</td><td>1.40%</td><td>31.90%</td></tr>
+<tr><td class="first-col">Aug</td><td>17.00%</td><td>6.80%</td><td>14.3</td><td>36.00%</td><td>1.40%</td><td>28.80%</td></tr>
+<tr><td class="first-col">Sept</td><td>15.90%</td><td>4.50%</td><td>10.3</td><td>45.10%</td><td>1.70%</td><td>15.70%</td></tr>
+<tr><td class="first-col">Oct</td><td>15.70%</td><td>4.60%</td><td>9.1</td><td>44.20%</td><td>1.80%</td><td>13.50%</td></tr>
+<tr><td class="first-col">Nov</td><td>16.50%</td><td>4.30%</td><td>10.8</td><td>45.80%</td><td>1.70%</td><td>14.30%</td></tr>
+<tr><td class="first-col">Dec</td><td>16.50%</td><td>6.70%</td><td>10.4</td><td>41.10%</td><td>1.70%</td><td>15.90%</td></tr>
+<!-- Generic -->
+<tr class="section-header"><td colspan="7">Generic</td></tr>
+<tr><td class="first-col">July</td><td>6.40%</td><td>4.20%</td><td>39.1</td><td>24.60%</td><td>2.00%</td><td>107.70%</td></tr>
+<tr><td class="first-col">Aug</td><td>6.20%</td><td>3.30%</td><td>38.8</td><td>21.60%</td><td>2.40%</td><td>95.50%</td></tr>
+<tr><td class="first-col">Sept</td><td>6.20%</td><td>3.90%</td><td>41.1</td><td>25.70%</td><td>2.10%</td><td>91.70%</td></tr>
+<tr><td class="first-col">Oct</td><td>6.70%</td><td>3.30%</td><td>40.2</td><td>24.20%</td><td>2.40%</td><td>90.70%</td></tr>
+<tr><td class="first-col">Nov</td><td>6.30%</td><td>2.90%</td><td>34.5</td><td>25.30%</td><td>2.90%</td><td>73.10%</td></tr>
+<tr><td class="first-col">Dec</td><td>6.20%</td><td>3.50%</td><td>31.6</td><td>23.70%</td><td>3.00%</td><td>73.40%</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<script>
+        const months = ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'];
+        const commonGrid = { top: '30px', left: '10%', right: '10%', bottom: '20px', containLabel: true };
+        const commonTooltip = { trigger: 'axis', textStyle: { fontSize: 10 } };
+        const commonAxis = { axisLabel: { fontSize: 9, color: '#6B7280', fontFamily: 'Inter' }, axisLine: { lineStyle: { color: '#E5E7EB' } } };
+
+        // Chart 1: PI Brand Absolute GV%
+        const chart1 = echarts.init(document.getElementById('chart1'));
+        chart1.setOption({
+            color: ['#00A3E0', '#F59E0B'],
+            tooltip: { trigger: 'axis' },
+            legend: { top: '0', right: '0', itemWidth: 8, itemHeight: 8, textStyle: { fontSize: 9 } },
+            grid: commonGrid,
+            xAxis: { type: 'category', data: months, ...commonAxis },
+            yAxis: [
+                { type: 'value', name: 'Brand %', position: 'left', splitLine: { show: false }, axisLabel: { fontSize: 9, formatter: '{value}%' } },
+                { type: 'value', name: 'Cat GV', position: 'right', splitLine: { lineStyle: { type: 'dashed' } }, axisLabel: { fontSize: 9, formatter: (value) => (value/1000000).toFixed(0) + 'M' } }
+            ],
+            series: [
+                { name: 'Brand Abs GV%', type: 'bar', data: [0.59, 0.50, 0.52, 0.80, 0.47, 0.57, 0.65, 0.75, 0.76, 0.62], yAxisIndex: 0, barWidth: '40%' },
+                { name: 'Category GV', type: 'line', data: [110845500, 114382687, 114088928, 154239935, 114967593, 142079785, 141588619, 136565386, 150473684, 131025791], yAxisIndex: 1, smooth: true }
+            ]
+        });
+
+        // Chart 2: PI Brand AD GV%
+        const chart2 = echarts.init(document.getElementById('chart2'));
+        chart2.setOption({
+            color: ['#10B981'],
+            tooltip: { trigger: 'axis' },
+            grid: commonGrid,
+            xAxis: { type: 'category', data: months, ...commonAxis },
+            yAxis: { type: 'value', axisLabel: { fontSize: 9, formatter: '{value}%' }, splitLine: { lineStyle: { type: 'dashed', color: '#eee' } } },
+            series: [
+                { name: 'Brand AD %', type: 'line', data: [15, 32, 18, 8, 13, 17, 30, 9, 9, 10], smooth: true, areaStyle: { opacity: 0.1 } }
+            ]
+        });
+
+        // Chart 3: SOV - PA VS Rank 1
+        const chart3 = echarts.init(document.getElementById('chart3'));
+        chart3.setOption({
+            color: ['#9CA3AF', '#9CA3AF', '#00A3E0', '#00A3E0'],
+            tooltip: { trigger: 'axis' },
+            legend: { top: '0', right: '0', itemWidth: 8, itemHeight: 8, textStyle: { fontSize: 8 }, width: '100%' },
+            grid: { top: '40px', left: '10%', right: '5%', bottom: '20px', containLabel: true },
+            xAxis: { type: 'category', data: months, ...commonAxis },
+            yAxis: { type: 'value', axisLabel: { fontSize: 9, formatter: '{value}%' }, splitLine: { lineStyle: { type: 'dashed', color: '#eee' } } },
+            series: [
+                { name: 'Rank 1 - Organic', type: 'line', data: [8, 2, 9, 3, 3, 3, 4, 3, 3, 7], lineStyle: { type: 'dotted', width: 2 }, symbol: 'none' },
+                { name: 'Rank 1 - AD', type: 'line', data: [10, 10, 9, 6, 5, 6, 5, 7, 6, 9], lineStyle: { type: 'dotted', width: 2 }, symbol: 'none' },
+                { name: 'PA - Organic', type: 'line', data: [8, 9, 9, 10, 9, 10, 10, 10, 10, 7], smooth: true, lineStyle: { width: 2 } },
+                { name: 'PA - AD', type: 'line', data: [10, 8, 9, 6, 4, 4, 4, 3, 4, 9], smooth: true, lineStyle: { width: 2 } }
+            ]
+        });
+
+        window.addEventListener('resize', function() {
+            chart1.resize();
+            chart2.resize();
+            chart3.resize();
+        });
+    </script>
+</body>
+</html>
