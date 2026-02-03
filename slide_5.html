@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Performance by Ad Type / Campaign Type</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1280px;
+            height: 720px;
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Brand Colors */
+        .bg-brand-blue { background-color: #00A3E0; }
+        .text-brand-blue { color: #00A3E0; }
+        .border-brand-blue { border-color: #00A3E0; }
+        
+        .bg-brand-gray { background-color: #374151; } /* Fallback/Secondary header */
+        .bg-highlight-blue { background-color: #E6F6FC; } /* Light Highlight */
+        
+        .logo-1ds {
+            position: absolute;
+            top: 24px;
+            right: 40px;
+            height: 32px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Table Styling */
+        .custom-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 11px;
+            line-height: 1.2;
+        }
+        
+        .custom-table th, .custom-table td {
+            border: 1px solid #E5E7EB;
+            padding: 4px 2px;
+            text-align: center;
+        }
+
+        .header-main {
+            background-color: #00A3E0;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .header-secondary {
+            background-color: #F3F4F6; /* Light gray for Nov/Oct headers */
+            color: #374151;
+            font-weight: 600;
+        }
+
+        .subheader {
+            background-color: #F9FAFB;
+            color: #4B5563;
+            font-weight: 600;
+            font-size: 10px;
+        }
+        
+        .subheader-highlight {
+            background-color: #E6F6FC; /* Light blue for Dec subheader */
+            color: #00A3E0;
+            font-weight: 700;
+        }
+
+        .section-header {
+            background-color: #FFFFFF;
+            color: #00A3E0; /* Changed to brand blue from brown */
+            font-weight: 700;
+            font-size: 13px;
+            text-align: left;
+            padding-left: 12px !important;
+            border-top: 2px solid #E5E7EB;
+        }
+        
+        .row-even { background-color: #FFFFFF; }
+        .row-odd { background-color: #F9FAFB; }
+        
+        /* Highlight styles for December columns */
+        .col-dec {
+            background-color: #E6F6FC;
+            font-weight: 600;
+            color: #111827;
+            border-left: 1px solid #00A3E0;
+            border-right: 1px solid #00A3E0;
+        }
+        
+        .col-dec-odd {
+             background-color: #DBF0FA;
+             font-weight: 600;
+             color: #111827;
+             border-left: 1px solid #00A3E0;
+             border-right: 1px solid #00A3E0;
+        }
+
+        .metric-cell {
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+<body>
+<!-- Top Accent Bar -->
+<div class="h-2 w-full bg-brand-blue flex-shrink-0"></div>
+<!-- Header Section -->
+<div class="px-10 pt-6 pb-2 relative flex-shrink-0">
+<h1 class="text-3xl font-bold text-gray-800">Performance by Ad Type / Campaign Type</h1>
+<img alt="1DS Logo" class="logo-1ds" src="https://www.genspark.ai/api/files/s/Tg0b2MKk"/>
+</div>
+<!-- Content Area -->
+<div class="flex-grow px-8 pt-2 pb-8 flex items-center justify-center">
+<div class="w-full h-full overflow-hidden flex flex-col justify-center">
+<table class="custom-table">
+<thead>
+<!-- Month Headers -->
+<tr>
+<th class="border-none bg-white" style="width: 140px;"></th>
+<!-- December Highlighted -->
+<th class="header-main border-brand-blue" colspan="6" style="border-bottom: none;">December '25</th>
+<th class="header-secondary" colspan="6">November '25</th>
+<th class="header-secondary" colspan="6">October '25</th>
+</tr>
+<!-- Metrics Headers -->
+<tr>
+<th class="text-left pl-3 bg-gray-100 text-gray-700 font-bold border-b-2 border-gray-300">Type / Metrics</th>
+<!-- December -->
+<th class="subheader-highlight border-l border-brand-blue">%Spend</th>
+<th class="subheader-highlight">%Sales</th>
+<th class="subheader-highlight">CTR</th>
+<th class="subheader-highlight">CVR</th>
+<th class="subheader-highlight">CPC</th>
+<th class="subheader-highlight border-r border-brand-blue">ROAS</th>
+<!-- November -->
+<th class="subheader">%Spend</th>
+<th class="subheader">%Sales</th>
+<th class="subheader">CTR</th>
+<th class="subheader">CVR</th>
+<th class="subheader">CPC</th>
+<th class="subheader">ROAS</th>
+<!-- October -->
+<th class="subheader">%Spend</th>
+<th class="subheader">%Sales</th>
+<th class="subheader">CTR</th>
+<th class="subheader">CVR</th>
+<th class="subheader">CPC</th>
+<th class="subheader">ROAS</th>
+</tr>
+</thead>
+<tbody>
+<!-- SECTION 1: CAMPAIGN TYPE -->
+<tr>
+<td class="section-header" colspan="19">Campaign Type wise Performance</td>
+</tr>
+<!-- SP -->
+<tr class="row-even">
+<td class="font-bold text-left pl-3 text-gray-800">SP</td>
+<!-- Dec --> <td class="col-dec">85.7%</td><td class="col-dec">96.7%</td><td class="col-dec">0.7%</td><td class="col-dec">29.2%</td><td class="col-dec">8.4</td><td class="col-dec">6.0</td>
+<!-- Nov --> <td>82.4%</td><td>94.6%</td><td>0.8%</td><td>33.2%</td><td>10.2</td><td>5.7</td>
+<!-- Oct --> <td>97.2%</td><td>97.5%</td><td>0.6%</td><td>36.6%</td><td>12.1</td><td>4.9</td>
+</tr>
+<!-- SB -->
+<tr class="row-odd">
+<td class="font-bold text-left pl-3 text-gray-800">SB</td>
+<!-- Dec --> <td class="col-dec-odd">14.3%</td><td class="col-dec-odd">3.3%</td><td class="col-dec-odd">0.2%</td><td class="col-dec-odd">0.0%</td><td class="col-dec-odd">13.0</td><td class="col-dec-odd">1.2</td>
+<!-- Nov --> <td>17.6%</td><td>5.4%</td><td>0.5%</td><td>0.0%</td><td>11.3</td><td>1.5</td>
+<!-- Oct --> <td>2.8%</td><td>2.5%</td><td>1.0%</td><td>0.0%</td><td>7.9</td><td>4.3</td>
+</tr>
+<!-- SD -->
+<tr class="row-even">
+<td class="font-bold text-left pl-3 text-gray-800">SD</td>
+<!-- Dec --> <td class="col-dec">0.0%</td><td class="col-dec">0.0%</td><td class="col-dec">0.0%</td><td class="col-dec">0.0%</td><td class="col-dec">0.0</td><td class="col-dec">0.0</td>
+<!-- Nov --> <td>0.0%</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>0.0</td><td>0.0</td>
+<!-- Oct --> <td>0.0%</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>0.0</td><td>0.0</td>
+</tr>
+<!-- SECTION 2: AD TYPE -->
+<tr>
+<td class="section-header" colspan="19">Ad Type wise Performance</td>
+</tr>
+<!-- Auto -->
+<tr class="row-odd">
+<td class="font-bold text-left pl-3 text-gray-800">Auto</td>
+<!-- Dec --> <td class="col-dec-odd">0.0%</td><td class="col-dec-odd">0.0%</td><td class="col-dec-odd">0.0%</td><td class="col-dec-odd">0.0%</td><td class="col-dec-odd">-</td><td class="col-dec-odd">-</td>
+<!-- Nov --> <td>0.0%</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>-</td><td>-</td>
+<!-- Oct --> <td>0.0%</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>-</td><td>-</td>
+</tr>
+<!-- Brand -->
+<tr class="row-even">
+<td class="font-bold text-left pl-3 text-gray-800">Brand</td>
+<!-- Dec --> <td class="col-dec">55.9%</td><td class="col-dec">77.9%</td><td class="col-dec">0.9%</td><td class="col-dec">30.4%</td><td class="col-dec">7.1</td><td class="col-dec">7.4</td>
+<!-- Nov --> <td>41.4%</td><td>69.2%</td><td>1.1%</td><td>34.5%</td><td>7.4</td><td>8.2</td>
+<!-- Oct --> <td>46.2%</td><td>73.5%</td><td>0.7%</td><td>37.3%</td><td>8.0</td><td>7.7</td>
+</tr>
+<!-- Generic -->
+<tr class="row-odd">
+<td class="font-bold text-left pl-3 text-gray-800">Generic</td>
+<!-- Dec --> <td class="col-dec-odd">43.9%</td><td class="col-dec-odd">21.8%</td><td class="col-dec-odd">0.3%</td><td class="col-dec-odd">17.2%</td><td class="col-dec-odd">12.9</td><td class="col-dec-odd">2.6</td>
+<!-- Nov --> <td>58.0%</td><td>25.8%</td><td>0.5%</td><td>16.1%</td><td>15.2</td><td>2.2</td>
+<!-- Oct --> <td>53.3%</td><td>21.4%</td><td>0.5%</td><td>26.4%</td><td>22.3</td><td>2.0</td>
+</tr>
+<!-- Competition -->
+<tr class="row-even">
+<td class="font-bold text-left pl-3 text-gray-800">Competition</td>
+<!-- Dec --> <td class="col-dec">0.2%</td><td class="col-dec">0.3%</td><td class="col-dec">1.6%</td><td class="col-dec">16.7%</td><td class="col-dec">3.8</td><td class="col-dec">6.9</td>
+<!-- Nov --> <td>0.6%</td><td>5.0%</td><td>4.2%</td><td>60.2%</td><td>2.6</td><td>40.5</td>
+<!-- Oct --> <td>0.5%</td><td>5.0%</td><td>5.8%</td><td>71.0%</td><td>2.0</td><td>54.1</td>
+</tr>
+<!-- SECTION 3: PLACEMENT -->
+<tr>
+<td class="section-header" colspan="19">Placement Wise Performance</td>
+</tr>
+<!-- TOS -->
+<tr class="row-odd">
+<td class="font-bold text-left pl-3 text-gray-800">TOS</td>
+<!-- Dec --> <td class="col-dec-odd">22.1%</td><td class="col-dec-odd">53.8%</td><td class="col-dec-odd">8.1%</td><td class="col-dec-odd">39.5%</td><td class="col-dec-odd">5.3</td><td class="col-dec-odd">12.9</td>
+<!-- Nov --> <td>28.0%</td><td>54.3%</td><td>7.3%</td><td>41.4%</td><td>7.8</td><td>9.5</td>
+<!-- Oct --> <td>40.6%</td><td>51.2%</td><td>5.9%</td><td>44.5%</td><td>12.2</td><td>6.1</td>
+</tr>
+<!-- ROS -->
+<tr class="row-even">
+<td class="font-bold text-left pl-3 text-gray-800">ROS</td>
+<!-- Dec --> <td class="col-dec">32.6%</td><td class="col-dec">24.1%</td><td class="col-dec">0.8%</td><td class="col-dec">22.0%</td><td class="col-dec">10.2</td><td class="col-dec">3.9</td>
+<!-- Nov --> <td>26.8%</td><td>24.0%</td><td>0.9%</td><td>22.3%</td><td>9.9</td><td>4.4</td>
+<!-- Oct --> <td>30.4%</td><td>33.8%</td><td>0.7%</td><td>35.7%</td><td>10.6</td><td>5.4</td>
+</tr>
+<!-- PDP -->
+<tr class="row-odd">
+<td class="font-bold text-left pl-3 text-gray-800">PDP</td>
+<!-- Dec --> <td class="col-dec-odd">45.3%</td><td class="col-dec-odd">22.1%</td><td class="col-dec-odd">0.3%</td><td class="col-dec-odd">16.1%</td><td class="col-dec-odd">11.2</td><td class="col-dec-odd">2.6</td>
+<!-- Nov --> <td>45.3%</td><td>21.7%</td><td>0.4%</td><td>16.8%</td><td>13.4</td><td>2.3</td>
+<!-- Oct --> <td>29.0%</td><td>14.9%</td><td>0.3%</td><td>19.8%</td><td>12.9</td><td>2.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
