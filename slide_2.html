@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1280, height=720, initial-scale=1.0" name="viewport"/>
+<title>Key Category Insights</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1280px;
+            height: 720px;
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-accent {
+            height: 7px;
+            background-color: #00A3E0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .logo-1ds {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            height: 28px;
+            width: auto;
+            z-index: 10;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            height: 713px; /* 720 - 7px top accent */
+            position: relative;
+            padding: 40px 48px;
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1f2937;
+            line-height: 1.2;
+            margin-bottom: 40px;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            height: 480px;
+        }
+
+        .insight-card {
+            flex: 1;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 16px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1f2937;
+        }
+
+        .card-body {
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .insight-item {
+            background-color: #F3F4F6;
+            border-left: 4px solid #00A3E0;
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .insight-text {
+            font-size: 15px;
+            color: #4b5563;
+            line-height: 1.5;
+        }
+
+        .highlight-text {
+            color: #00A3E0;
+            font-weight: 700;
+        }
+        
+        .highlight-negative {
+            color: #EF4444;
+            font-weight: 700;
+        }
+
+        /* Specific card styles */
+        .card-1 .icon-box { background-color: #E0F2FE; color: #00A3E0; }
+        .card-2 .icon-box { background-color: #EFF6FF; color: #3B82F6; }
+        .card-3 .icon-box { background-color: #FEF3C7; color: #D97706; }
+    </style>
+</head>
+<body>
+<!-- Top Accent Bar -->
+<div class="top-accent"></div>
+<!-- 1DS Logo -->
+<img alt="1DigitalStack Logo" class="logo-1ds" src="https://www.genspark.ai/api/files/s/Tg0b2MKk"/>
+<div class="slide-container">
+<!-- Main Title -->
+<h1 class="main-title">Key Category Insights</h1>
+<!-- Cards Container -->
+<div class="cards-container">
+<!-- CARD 1: Monthly Performance -->
+<div class="insight-card card-1">
+<div class="card-header">
+<div class="icon-box">
+<i class="fas fa-chart-line text-2xl"></i>
+</div>
+<div class="card-title">Monthly Performance</div>
+</div>
+<div class="card-body">
+<div class="insight-item">
+<p class="insight-text">December Actuals vs Plan showed exceptional performance, with Sales achieving <span class="highlight-text">186%</span> of the target and Orders at <span class="highlight-text">184%</span>.</p>
+</div>
+<div class="insight-item">
+<p class="insight-text">Ad ROAS stood at <span class="highlight-text">5.49</span> against a plan of 3.37, demonstrating high efficiency despite a 14% overspend.</p>
+</div>
+<div class="insight-item">
+<p class="insight-text">Impressions were 57% higher than planned (1.78M vs 1.13M), driving strong top-of-funnel awareness.</p>
+</div>
+</div>
+</div>
+<!-- CARD 2: Ad Type Performance -->
+<div class="insight-card card-2">
+<div class="card-header">
+<div class="icon-box">
+<i class="fas fa-bullhorn text-2xl"></i>
+</div>
+<div class="card-title">Ad Type Performance</div>
+</div>
+<div class="card-body">
+<div class="insight-item">
+<p class="insight-text">Sponsored Products (SP) remain the engine of growth, driving <span class="highlight-text">96.7%</span> of total sales with a robust ROAS of 5.95.</p>
+</div>
+<div class="insight-item">
+<p class="insight-text">Brand campaigns are highly profitable (ROAS 7.35), converting well at 30.4%.</p>
+</div>
+<div class="insight-item">
+<p class="insight-text">Generic campaigns consume 44% of spend but yield lower returns (ROAS 2.61), suggesting a need for keyword refinement.</p>
+</div>
+</div>
+</div>
+<!-- CARD 3: SKU Deep Dive -->
+<div class="insight-card card-3">
+<div class="card-header">
+<div class="icon-box">
+<i class="fas fa-box-open text-2xl"></i>
+</div>
+<div class="card-title">SKU Deep Dive</div>
+</div>
+<div class="card-body">
+<div class="insight-item">
+<p class="insight-text">The <span class="highlight-text">300ml pack</span> acts as the primary volume driver, contributing almost all sales (505K) with 100% availability.</p>
+</div>
+<div class="insight-item">
+<p class="insight-text">The 400ml variant suffered from <span class="highlight-negative">critical stock issues</span> (33% availability), leading to negligible sales and poor ROAS (1.0).</p>
+</div>
+<div class="insight-item">
+<p class="insight-text">Inventory stabilization for the 400ml pack is required to unlock incremental growth.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
