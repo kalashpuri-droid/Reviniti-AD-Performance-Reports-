@@ -45,8 +45,7 @@
         }
         .bottom-accent {
             height: 7px;
-            background-color: #005f56; /* Keeping original green for bottom or changing? prompt said "update the top accent". Keeping bottom as per brand consistency with product unless specified otherwise. Let's keep bottom green to match product bottle, but instructions said "update the top accent using this color: #00A3E0 on all the slides". Let's update bottom too for consistency if it's a rebranding */
-            /* Actually, the prompt says "update the top accent". It implies top bar. I will keep bottom consistent with original template logic unless it clashes violently. But wait, "Update cover slide with 1DS logo... change top accent bar to #00A3E0... and update the overall design to match the new branding." New branding usually implies color consistency. Let's change bottom too to be safe or keep it dark teal to match the bottle. I will keep bottom dark teal #005f56 to anchor the product image colors, but top is definitely #00A3E0. */
+            background-color: #005f56;
             width: 100%;
             position: absolute;
             bottom: 0;
@@ -68,7 +67,7 @@
             top: 64px;
             width: 4px;
             height: 40px;
-            background-color: #00A3E0; /* Updated to match new accent */
+            background-color: #00A3E0;
             z-index: 200;
         }
         .horizontal-bar {
@@ -77,7 +76,7 @@
             top: 431px;
             width: 96px;
             height: 8px;
-            background-color: #00A3E0; /* Updated to match new accent */
+            background-color: #00A3E0;
             z-index: 200;
         }
         .product-image {
@@ -113,13 +112,11 @@
 <body>
 <div class="slide-container">
 <!-- Background Shapes -->
-<!-- Shape 2: Right side light blue shape -->
 <div class="bg-shape-right">
 <svg height="100%" preserveaspectratio="none" viewbox="0 0 4067251 6858000" width="100%">
 <path d="M 813450 0 L 4067251 0 L 4067251 6858000 L 0 6858000 Z" fill="#e0f2f1"></path>
 </svg>
 </div>
-<!-- Shape 3: Circle -->
 <div class="bg-circle"></div>
 <!-- Top Bar -->
 <div class="top-accent"></div>
@@ -130,38 +127,31 @@
 <!-- Horizontal Content Bar -->
 <div class="horizontal-bar"></div>
 <!-- Images -->
-<!-- Image 1: Icon -->
-<img alt="Icon" src="https://page.gensparksite.com/template_extract/879b2533-428e-4f9a-b3cf-f4f5a1c5f08e/slide_0/slide_image_9.png" style="position: absolute; left: 80px; top: 477px; width: 16px; height: 16px; z-index: 209; object-fit: contain;"/>
-<!-- Image 2: Product -->
-<img alt="Parachute Oil Product" class="product-image" src="https://page.gensparksite.com/template_extract/879b2533-428e-4f9a-b3cf-f4f5a1c5f08e/slide_0/slide_image_13.png"/>
-<!-- Image 3: 1DS Logo (Replaces previous logo) -->
-<img alt="1DS Logo" class="logo-1ds" src="https://www.genspark.ai/api/files/s/Tg0b2MKk"/>
+<img alt="Icon" src="<icon1>" style="position: absolute; left: 80px; top: 477px; width: 16px; height: 16px; z-index: 209; object-fit: contain;"/>
+<img alt="Product" class="product-image" src="<product_image1>"/>
+<img alt="Brand Logo" class="logo-1ds" src="<logo1>"/>
 <!-- Text Elements -->
-<!-- Header Text -->
 <div style="position: absolute; left: 100px; top: 74px; width: 400px; height: 20px; z-index: 205;">
 <p style="font-family: 'Inter', sans-serif; font-size: 13.33px; font-weight: 700; color: #6b7280; letter-spacing: 0.1em;">
-            Marico Limited | Advertising Performance
+            <brand1> | <report_type>
         </p>
 </div>
-<!-- Main Title -->
 <div style="position: absolute; left: 80px; top: 209px; width: 685px; height: 32px; z-index: 206;">
 <p style="font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 700; color: #c5a065;">
-            Parachute Advansed
+            <product_line1>
         </p>
 </div>
-<!-- Main Content -->
 <div style="position: absolute; left: 80px; top: 249px; width: 712px; height: 160px; z-index: 207;">
 <p style="font-family: 'Inter', sans-serif; font-size: 60px; font-weight: 700; color: #1f2937; margin-bottom: 0; line-height: 1.1;">
-            Ayurvedic Coconut
+            <headline_line1>
         </p>
 <p style="font-family: 'Inter', sans-serif; font-size: 60px; font-weight: 700; color: #00A3E0; margin-top: -5px; line-height: 1.1;">
-            Hair Oil
+            <headline_line2>
         </p>
 </div>
-<!-- Footer Text -->
 <div style="position: absolute; left: 108px; top: 471px; width: 337px; height: 28px; z-index: 210; display: flex; align-items: center;">
 <p style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 400; color: #4b5563;">
-            Advertising Performance Review
+            <report_subtitle>
         </p>
 </div>
 <div style="position: absolute; left: 446px; top: 473px; width: 17px; height: 23px; z-index: 212;">
@@ -171,7 +161,7 @@
 </div>
 <div style="position: absolute; left: 467px; top: 471px; width: 180px; height: 28px; z-index: 211;">
 <p style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 400; color: #4b5563;">
-            December 2025
+            <report_month>
         </p>
 </div>
 </div>

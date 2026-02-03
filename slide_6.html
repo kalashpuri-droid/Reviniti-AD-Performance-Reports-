@@ -26,7 +26,6 @@
             font-family: 'Inter', sans-serif;
         }
 
-        /* Top Bar */
         .top-bar {
             position: absolute;
             top: 0;
@@ -37,7 +36,6 @@
             z-index: 10;
         }
 
-        /* Logo */
         .logo-1ds {
             position: absolute;
             top: 20px;
@@ -47,14 +45,12 @@
             z-index: 205;
         }
 
-        /* Text Styles */
         p {
             margin: 0;
             padding: 0;
             line-height: 1.2;
         }
 
-        /* Table Styles */
         table {
             border-collapse: collapse;
             table-layout: fixed;
@@ -69,7 +65,6 @@
             text-overflow: clip;
         }
 
-        /* Specific Table Styling */
         .header-table td {
             color: #ffffff;
             font-weight: 600;
@@ -89,17 +84,15 @@
             text-align: center;
             vertical-align: middle;
             border-bottom: 1px solid #e5e7eb;
-            height: 29px; /* adjust row height */
+            height: 29px;
         }
         
-        /* Font adjustments for first column */
         .data-table tr td:first-child { 
             font-size: 13.33px; 
             font-weight: 500;
             color: #374151;
         }
 
-        /* Column Widths Helper Class */
         .col-title { width: 85.91px; }
         .col-spend { width: 81.66px; }
         .col-impr { width: 83.80px; }
@@ -121,25 +114,19 @@
 </head>
 <body>
 <div class="slide-container">
-<!-- Top Strip -->
 <div class="top-bar"></div>
-<!-- Logo -->
-<img alt="1DS Logo" class="logo-1ds" src="https://www.genspark.ai/api/files/s/Tg0b2MKk"/>
-<!-- Main Title -->
+<img alt="Brand Logo" class="logo-1ds" src="<logo1>"/>
 <div style="position: absolute; left: 40px; top: 48px; width: 600px; height: 36px; z-index: 203;">
-<p style="font-family: 'Inter', sans-serif; font-size: 29.33px; font-weight: 700; color: #1f2937;">Product Wise Performance</p>
+<p style="font-family: 'Inter', sans-serif; font-size: 29.33px; font-weight: 700; color: #1f2937;"><slide_title5></p>
 </div>
-<!-- Legend: High Availability -->
 <div style="position: absolute; left: 978px; top: 72px; width: 8px; height: 8px; background-color: #10b981; border-radius: 50%;"></div>
 <div style="position: absolute; left: 994px; top: 68px; width: 105px; height: 16px;">
-<p style="font-family: 'Inter', sans-serif; font-size: 12px; color: #6b7280;">High Availability</p>
+<p style="font-family: 'Inter', sans-serif; font-size: 12px; color: #6b7280;"><legend_high></p>
 </div>
-<!-- Legend: Critical Availability -->
 <div style="position: absolute; left: 1113px; top: 72px; width: 8px; height: 8px; background-color: #ef4444; border-radius: 50%;"></div>
 <div style="position: absolute; left: 1129px; top: 68px; width: 120px; height: 16px;">
-<p style="font-family: 'Inter', sans-serif; font-size: 12px; color: #6b7280;">Critical Availability</p>
+<p style="font-family: 'Inter', sans-serif; font-size: 12px; color: #6b7280;"><legend_critical></p>
 </div>
-<!-- Header Table -->
 <div style="position: absolute; left: 43px; top: 99px; width: 1196px; height: 39px; z-index: 100;">
 <table class="header-table" style="height: 100%;">
 <colgroup>
@@ -180,35 +167,20 @@
 </tr>
 </table>
 </div>
-<!-- ================= PRODUCT 1 ================= -->
-<!-- Background Strip -->
 <div style="position: absolute; left: 41px; top: 138px; width: 1198px; height: 52px; background-color: #F0F9FF; z-index: 5;"></div>
-<!-- Product Image Placeholder -->
 <div style="position: absolute; left: 53px; top: 147px; width: 32px; height: 32px; background-color: white; border-radius: 2px; display: flex; align-items: center; justify-content: center; z-index: 6; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
 <svg fill="#00A3E0" height="24" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
 <path d="M7 2h10v22H7z" opacity="0.3"></path>
 <path d="M9 6h6v14H9z"></path>
 </svg>
 </div>
-<!-- Product Title -->
 <div style="position: absolute; left: 97px; top: 146px; width: 968px; height: 20px; z-index: 20;">
-<p style="font-family: 'Inter', sans-serif; font-size: 13.33px; font-weight: 700; color: #00A3E0;">Parachute Advansed Ayurvedic Coconut Hair Oil | 300ml</p>
+<p style="font-family: 'Inter', sans-serif; font-size: 13.33px; font-weight: 700; color: #00A3E0;"><product_title1></p>
 </div>
-<!-- Product Subtitle -->
 <div style="position: absolute; left: 97px; top: 166px; width: 965px; height: 15px; z-index: 20;">
-<p style="font-family: 'Inter', sans-serif; font-size: 10.67px; color: #6b7280;">B00GMC02XK | For Hair Fall Control &amp; Hair Growth | With 25 Ayurvedic Herbs</p>
+<p style="font-family: 'Inter', sans-serif; font-size: 10.67px; color: #6b7280;"><product_subtitle1></p>
 </div>
-<!-- Badge 1: Primary Growth Driver -->
-<div style="position: absolute; left: 1069px; top: 150px; width: 158px; height: 26px; background-color: #00A3E0; border-radius: 13px; z-index: 20; display: flex; align-items: center; padding-left: 8px;">
-<!-- Icon -->
-<svg fill="white" height="12" style="margin-right: 6px;" viewbox="0 0 24 24" width="12">
-<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
-</svg>
-<!-- Text -->
-<p style="font-family: 'Inter', sans-serif; font-size: 10.67px; font-weight: 700; color: white;">PRIMARY GROWTH DRIVER</p>
-</div>
-<!-- Table 1 Data -->
-<div style="position: absolute; left: 40px; top: 186px; width: 1201px; z-index: 10;">
+<div style="position: absolute; left: 41px; top: 190px; width: 1198px; height: 58px; z-index: 50;">
 <table class="data-table">
 <colgroup>
 <col class="col-title"/>
@@ -229,85 +201,39 @@
 <col class="col-avail"/>
 </colgroup>
 <tr>
-<td>December</td>
-<td>86,791</td>
-<td>1,567,946</td>
-<td>10,081</td>
-<td>9</td>
-<td>1%</td>
-<td>19%</td>
-<td>505,042</td>
-<td>1,899</td>
-<td>6</td>
-<td>266</td>
-<td>740,908</td>
-<td>3,983</td>
-<td>9</td>
-<td>186</td>
-<td style="color: #10b981; font-weight: 700;">100%</td>
-</tr>
-<tr>
-<td>November</td>
-<td>63,932</td>
-<td>775,806</td>
-<td>6,231</td>
-<td>10</td>
-<td>1%</td>
-<td>19%</td>
-<td>335,381</td>
-<td>1,189</td>
-<td>5</td>
-<td>282</td>
-<td>579,341</td>
-<td>3,257</td>
-<td>9</td>
-<td>178</td>
-<td style="color: #10b981; font-weight: 700;">100%</td>
-</tr>
-<tr>
-<td>October</td>
-<td>68,986</td>
-<td>919,462</td>
-<td>5,753</td>
-<td>12</td>
-<td>1%</td>
-<td>23%</td>
-<td>334,613</td>
-<td>1,296</td>
-<td>5</td>
-<td>258</td>
-<td>851,458</td>
-<td>4,910</td>
-<td>12</td>
-<td>173</td>
-<td style="color: #10b981; font-weight: 700;">100%</td>
+<td><product_sku1></td>
+<td><value1></td>
+<td><value2></td>
+<td><value3></td>
+<td><value4></td>
+<td><value5></td>
+<td><value6></td>
+<td><value7></td>
+<td><value8></td>
+<td><value9></td>
+<td><value10></td>
+<td><value11></td>
+<td><value12></td>
+<td><value13></td>
+<td><value14></td>
+<td><value15></td>
 </tr>
 </table>
 </div>
-<!-- ================= PRODUCT 2 ================= -->
-<!-- Background Strip -->
-<div style="position: absolute; left: 41px; top: 298px; width: 1198px; height: 54px; background-color: #F0F9FF; z-index: 5;"></div>
-<!-- Product Image Placeholder -->
-<div style="position: absolute; left: 53px; top: 310px; width: 32px; height: 32px; background-color: white; border-radius: 2px; display: flex; align-items: center; justify-content: center; z-index: 6; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-<svg fill="#374151" height="24" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<div style="position: absolute; left: 41px; top: 260px; width: 1198px; height: 52px; background-color: #ffffff; z-index: 5;"></div>
+<div style="position: absolute; left: 53px; top: 269px; width: 32px; height: 32px; background-color: white; border-radius: 2px; display: flex; align-items: center; justify-content: center; z-index: 6; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<svg fill="#00A3E0" height="24" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
 <path d="M7 2h10v22H7z" opacity="0.3"></path>
 <path d="M9 6h6v14H9z"></path>
 </svg>
 </div>
-<!-- Product Title -->
-<div style="position: absolute; left: 97px; top: 308px; width: 1023px; height: 20px; z-index: 20;">
-<p style="font-family: 'Inter', sans-serif; font-size: 13.33px; font-weight: 700; color: #374151;">Parachute Advansed Ayurvedic Coconut Hair Oil | 400ml</p>
+<div style="position: absolute; left: 97px; top: 268px; width: 968px; height: 20px; z-index: 20;">
+<p style="font-family: 'Inter', sans-serif; font-size: 13.33px; font-weight: 700; color: #00A3E0;"><product_title2></p>
 </div>
-<!-- Product Subtitle -->
-<div style="position: absolute; left: 97px; top: 328px; width: 1020px; height: 15px; z-index: 20;">
-<p style="font-family: 'Inter', sans-serif; font-size: 10.67px; color: #6b7280;">B0BFDPQHQ7 | For Hair Fall Control &amp; Hair Growth | Toggle Variant</p>
+<div style="position: absolute; left: 97px; top: 288px; width: 965px; height: 15px; z-index: 20;">
+<p style="font-family: 'Inter', sans-serif; font-size: 10.67px; color: #6b7280;"><product_subtitle2></p>
 </div>
-<!-- Badge 2: Low Contribution -->
-<div style="position: absolute; left: 1125px; top: 316px; width: 103px; height: 19px; background-color: #e5e7eb; border-radius: 9px; z-index: 20; display: flex; align-items: center; justify-content: center;">
-<p style="font-family: 'Inter', sans-serif; font-size: 10.67px; font-weight: 700; color: #4b5563;">Low Contribution</p>
-</div>
-<!-- Table 2 Data -->
-<div style="position: absolute; left: 40px; top: 352px; width: 1200px; z-index: 10;">
+<div style="position: absolute; left: 41px; top: 312px; width: 1198px; height: 58px; z-index: 50;">
 <table class="data-table">
 <colgroup>
 <col class="col-title"/>
@@ -328,63 +254,25 @@
 <col class="col-avail"/>
 </colgroup>
 <tr>
-<td>December</td>
-<td>6,705</td>
-<td>212,288</td>
-<td>517</td>
-<td>13</td>
-<td>0%</td>
-<td>7%</td>
-<td>8,048</td>
-<td>36</td>
-<td>1</td>
-<td>227</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td style="color: #ef4444; font-weight: 700;">33%</td>
-</tr>
-<tr>
-<td>November</td>
-<td>6,186</td>
-<td>106,206</td>
-<td>547</td>
-<td>11</td>
-<td>1%</td>
-<td>8%</td>
-<td>9,301</td>
-<td>44</td>
-<td>2</td>
-<td>214</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td style="color: #ef4444; font-weight: 700;">6%</td>
-</tr>
-<tr>
-<td>October</td>
-<td>995</td>
-<td>11,994</td>
-<td>126</td>
-<td>8</td>
-<td>1%</td>
-<td>12%</td>
-<td>4,248</td>
-<td>16</td>
-<td>4</td>
-<td>274</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td style="color: #ef4444; font-weight: 700;">0%</td>
+<td><product_sku2></td>
+<td><value16></td>
+<td><value17></td>
+<td><value18></td>
+<td><value19></td>
+<td><value20></td>
+<td><value21></td>
+<td><value22></td>
+<td><value23></td>
+<td><value24></td>
+<td><value25></td>
+<td><value26></td>
+<td><value27></td>
+<td><value28></td>
+<td><value29></td>
+<td><value30></td>
 </tr>
 </table>
 </div>
-<!-- Bottom Line -->
-<div style="position: absolute; left: 40px; top: 663px; width: 1200px; height: 1px; background-color: #f3f4f6;"></div>
 </div>
 </body>
 </html>
