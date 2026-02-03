@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1280, height=720, initial-scale=1.0" name="viewport"/>
+<title>Plan vs Achievement &amp; Monthly Trends</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1280px;
+            height: 720px;
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-accent {
+            height: 7px;
+            background-color: #00A3E0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .logo-1ds {
+            position: absolute;
+            top: 24px;
+            right: 40px;
+            height: 28px;
+            width: auto;
+            z-index: 10;
+        }
+
+        .slide-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-top: 30px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* Metric Widgets */
+        .metric-widget {
+            display: flex;
+            flex-direction: column;
+            border-left: 4px solid #00A3E0;
+            padding-left: 12px;
+            margin-right: 40px;
+        }
+        .metric-label {
+            font-size: 12px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        .metric-value {
+            font-size: 16px;
+            font-weight: 700;
+            color: #00A3E0;
+        }
+
+        /* Table Styles */
+        .data-table-container {
+            width: 1200px;
+            margin-left: 40px;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px; 
+            table-layout: fixed;
+        }
+
+        th {
+            background-color: #00A3E0;
+            color: white;
+            font-weight: 600;
+            padding: 8px 4px;
+            text-align: center;
+            border: 1px solid white;
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 4px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            color: #374151;
+            white-space: nowrap;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .text-green { color: #10b981; font-weight: 600; }
+        .text-red { color: #ef4444; font-weight: 600; }
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 40px;
+        }
+        .section-icon {
+            color: #00A3E0;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #374151;
+        }
+        
+        .table-row-compact td {
+            padding: 3px 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Top Accent -->
+<div class="top-accent"></div>
+<!-- Logo -->
+<img alt="1DS Logo" class="logo-1ds" src="https://www.genspark.ai/api/files/s/Tg0b2MKk"/>
+<!-- Header Area -->
+<div class="flex justify-between items-start">
+<h1 class="slide-title">Plan vs Achievement &amp; Monthly Trends</h1>
+<!-- Key Metrics Summary (Top Right) -->
+<div class="flex absolute top-24 right-10">
+<div class="metric-widget">
+<span class="metric-label">Spend</span>
+<span class="metric-value">93.5K</span>
+</div>
+<div class="metric-widget">
+<span class="metric-label">Sales</span>
+<span class="metric-value">513.1K</span>
+</div>
+<div class="metric-widget">
+<span class="metric-label">Ad ROAS</span>
+<span class="metric-value">5.5</span>
+</div>
+<div class="metric-widget" style="margin-right: 0;">
+<span class="metric-label">CVR</span>
+<span class="metric-value">18.3%</span>
+</div>
+</div>
+</div>
+<!-- Section 1: Plan vs Achievement -->
+<div class="section-header">
+<i class="fas fa-chart-line section-icon"></i>
+<h2 class="section-title">Plan vs Achievement (Dec-25)</h2>
+</div>
+<div class="data-table-container">
+<table>
+<colgroup>
+<col style="width: 80px;"/> <!-- Type -->
+<col style="width: 60px;"/> <!-- Month -->
+<col style="width: 70px;"/> <!-- Spend -->
+<col style="width: 80px;"/> <!-- Impr -->
+<col style="width: 60px;"/> <!-- Click -->
+<col style="width: 50px;"/> <!-- CPC -->
+<col style="width: 50px;"/> <!-- CTR -->
+<col style="width: 50px;"/> <!-- CVR -->
+<col style="width: 70px;"/> <!-- Sale -->
+<col style="width: 60px;"/> <!-- Orders -->
+<col style="width: 60px;"/> <!-- Ad ROAS -->
+<col style="width: 60px;"/> <!-- Ad AOV -->
+<col style="width: 70px;"/> <!-- Offtake Rev -->
+<col style="width: 70px;"/> <!-- Offtake Units -->
+<col style="width: 60px;"/> <!-- T ROAS -->
+<col style="width: 60px;"/> <!-- T AOV -->
+</colgroup>
+<thead>
+<tr>
+<th>TYPE</th>
+<th>MONTH</th>
+<th>SPEND</th>
+<th>IMPR.</th>
+<th>CLICK</th>
+<th>CPC</th>
+<th>CTR</th>
+<th>CVR</th>
+<th>SALE</th>
+<th>ORDERS</th>
+<th>AD ROAS</th>
+<th>AD AOV</th>
+<th>OFFTAKE REV</th>
+<th>OFFTAKE UNITS</th>
+<th>T ROAS</th>
+<th>T AOV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="font-semibold text-gray-800">Actual</td>
+<td>Dec-25</td>
+<td>93.5K</td>
+<td>1.8M</td>
+<td>10.6K</td>
+<td>8.8</td>
+<td>0.6%</td>
+<td>18.3%</td>
+<td>513.1K</td>
+<td>1.9K</td>
+<td>5.5</td>
+<td>265.0</td>
+<td>740.9K</td>
+<td>4.0K</td>
+<td>7.9</td>
+<td>186.0</td>
+</tr>
+<tr>
+<td class="font-semibold text-gray-800">Plan</td>
+<td>Dec-25</td>
+<td>82.0K</td>
+<td>1.1M</td>
+<td>6.8K</td>
+<td>12.0</td>
+<td>0.6%</td>
+<td>15.4%</td>
+<td>276.3K</td>
+<td>1.1K</td>
+<td>3.4</td>
+<td>263.0</td>
+<td>657.9K</td>
+<td>3.7K</td>
+<td>8.0</td>
+<td>180.0</td>
+</tr>
+<tr>
+<td class="font-semibold text-gray-800">% Achieved</td>
+<td></td>
+<td class="text-green">114.0%</td>
+<td class="text-green">157.0%</td>
+<td class="text-green">155.0%</td>
+<td class="text-green">73.0%</td>
+<td class="text-red">99.0%</td>
+<td class="text-green">118.0%</td>
+<td class="text-green">186.0%</td>
+<td class="text-green">184.0%</td>
+<td class="text-green">163.0%</td>
+<td class="text-green">101.0%</td>
+<td class="text-green">113.0%</td>
+<td class="text-green">109.0%</td>
+<td class="text-red">99.0%</td>
+<td class="text-green">103.0%</td>
+</tr>
+<tr>
+<td class="font-semibold text-gray-800">% Change LM</td>
+<td></td>
+<td class="text-green">133.0%</td>
+<td class="text-green">202.0%</td>
+<td class="text-green">156.0%</td>
+<td class="text-green">85.0%</td>
+<td class="text-red">77.0%</td>
+<td class="text-green">100.0%</td>
+<td class="text-green">149.0%</td>
+<td class="text-green">157.0%</td>
+<td class="text-green">112.0%</td>
+<td class="text-red">95.0%</td>
+<td class="text-green">128.0%</td>
+<td class="text-green">122.0%</td>
+<td class="text-red">96.0%</td>
+<td class="text-green">105.0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Section 2: Monthly Performance Trend -->
+<div class="section-header">
+<i class="fas fa-calendar-alt section-icon"></i>
+<h2 class="section-title">Monthly Performance Trend</h2>
+</div>
+<div class="data-table-container">
+<table>
+<colgroup>
+<col style="width: 80px;"/> <!-- Type -->
+<col style="width: 60px;"/> <!-- Month -->
+<col style="width: 70px;"/> <!-- Spend -->
+<col style="width: 80px;"/> <!-- Impr -->
+<col style="width: 60px;"/> <!-- Click -->
+<col style="width: 50px;"/> <!-- CPC -->
+<col style="width: 50px;"/> <!-- CTR -->
+<col style="width: 50px;"/> <!-- CVR -->
+<col style="width: 70px;"/> <!-- Sale -->
+<col style="width: 60px;"/> <!-- Orders -->
+<col style="width: 60px;"/> <!-- Ad ROAS -->
+<col style="width: 60px;"/> <!-- Ad AOV -->
+<col style="width: 70px;"/> <!-- Offtake Rev -->
+<col style="width: 70px;"/> <!-- Offtake Units -->
+<col style="width: 60px;"/> <!-- T ROAS -->
+<col style="width: 60px;"/> <!-- T AOV -->
+</colgroup>
+<thead>
+<tr>
+<th>TYPE</th>
+<th>MONTH</th>
+<th>SPEND</th>
+<th>IMPR.</th>
+<th>CLICK</th>
+<th>CPC</th>
+<th>CTR</th>
+<th>CVR</th>
+<th>SALE</th>
+<th>ORDERS</th>
+<th>AD ROAS</th>
+<th>AD AOV</th>
+<th>OFFTAKE REV</th>
+<th>OFFTAKE UNITS</th>
+<th>T ROAS</th>
+<th>T AOV</th>
+</tr>
+</thead>
+<tbody class="table-row-compact">
+<!-- Dec -->
+<tr>
+<td class="font-semibold text-gray-800">Actual</td>
+<td>Dec-25</td>
+<td>93.5K</td>
+<td>1.8M</td>
+<td>10.6K</td>
+<td>8.8</td>
+<td>0.6%</td>
+<td>18.3%</td>
+<td>513.1K</td>
+<td>1.9K</td>
+<td>5.5</td>
+<td>265.0</td>
+<td>740.9K</td>
+<td>4.0K</td>
+<td>7.9</td>
+<td>186.0</td>
+</tr>
+<!-- Nov -->
+<tr>
+<td class="font-semibold text-gray-800">Actual</td>
+<td>Nov-25</td>
+<td>70.1K</td>
+<td>882.0K</td>
+<td>6.8K</td>
+<td>10.4</td>
+<td>0.8%</td>
+<td>18.2%</td>
+<td>344.7K</td>
+<td>1.2K</td>
+<td>4.9</td>
+<td>280.0</td>
+<td>579.3K</td>
+<td>3.3K</td>
+<td>8.3</td>
+<td>178.0</td>
+</tr>
+<!-- Oct -->
+<tr>
+<td class="font-semibold text-gray-800">Actual</td>
+<td>Oct-25</td>
+<td>70.0K</td>
+<td>931.5K</td>
+<td>5.9K</td>
+<td>11.9</td>
+<td>0.6%</td>
+<td>22.3%</td>
+<td>338.9K</td>
+<td>1.3K</td>
+<td>4.8</td>
+<td>258.0</td>
+<td>851.5K</td>
+<td>4.9K</td>
+<td>12.2</td>
+<td>173.0</td>
+</tr>
+<!-- Sep -->
+<tr>
+<td class="font-semibold text-gray-800">Actual</td>
+<td>Sep-25</td>
+<td>95.2K</td>
+<td>1.9M</td>
+<td>7.3K</td>
+<td>13.0</td>
+<td>0.4%</td>
+<td>18.9%</td>
+<td>328.5K</td>
+<td>1.4K</td>
+<td>3.5</td>
+<td>236.0</td>
+<td>647.2K</td>
+<td>3.7K</td>
+<td>6.8</td>
+<td>176.0</td>
+</tr>
+<!-- Aug -->
+<tr>
+<td class="font-semibold text-gray-800">Actual</td>
+<td>Aug-25</td>
+<td>98.5K</td>
+<td>1.3M</td>
+<td>7.0K</td>
+<td>14.1</td>
+<td>0.6%</td>
+<td>19.7%</td>
+<td>295.1K</td>
+<td>1.4K</td>
+<td>3.0</td>
+<td>214.0</td>
+<td>554.9K</td>
+<td>3.4K</td>
+<td>5.6</td>
+<td>164.0</td>
+</tr>
+<!-- Jul -->
+<tr>
+<td class="font-semibold text-gray-800">Actual</td>
+<td>Jul-25</td>
+<td>100.0K</td>
+<td>1.5M</td>
+<td>8.0K</td>
+<td>12.6</td>
+<td>0.5%</td>
+<td>18.1%</td>
+<td>313.6K</td>
+<td>1.4K</td>
+<td>3.1</td>
+<td>217.0</td>
+<td>716.5K</td>
+<td>4.7K</td>
+<td>7.2</td>
+<td>152.0</td>
+</tr>
+<!-- Jun -->
+<tr>
+<td class="font-semibold text-gray-800">Actual</td>
+<td>Jun-25</td>
+<td>110.6K</td>
+<td>2.0M</td>
+<td>8.8K</td>
+<td>12.5</td>
+<td>0.4%</td>
+<td>16.0%</td>
+<td>290.8K</td>
+<td>1.4K</td>
+<td>2.6</td>
+<td>206.0</td>
+<td>483.2K</td>
+<td>3.2K</td>
+<td>4.4</td>
+<td>152.0</td>
+</tr>
+<!-- May -->
+<tr>
+<td class="font-semibold text-gray-800">Actual</td>
+<td>May-25</td>
+<td>348.9K</td>
+<td>3.8M</td>
+<td>17.6K</td>
+<td>19.8</td>
+<td>0.5%</td>
+<td>17.3%</td>
+<td>643.2K</td>
+<td>3.1K</td>
+<td>1.8</td>
+<td>210.0</td>
+<td>742.4K</td>
+<td>5.5K</td>
+<td>2.1</td>
+<td>135.0</td>
+</tr>
+<!-- Apr -->
+<tr>
+<td class="font-semibold text-gray-800">Actual</td>
+<td>Apr-25</td>
+<td>289.8K</td>
+<td>6.9M</td>
+<td>14.8K</td>
+<td>19.5</td>
+<td>0.2%</td>
+<td>15.5%</td>
+<td>520.7K</td>
+<td>2.3K</td>
+<td>1.8</td>
+<td>226.0</td>
+<td>741.1K</td>
+<td>5.3K</td>
+<td>2.6</td>
+<td>139.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
