@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Revinit_Ad Performance Reports Design Template</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f0f0f0; }
+        iframe { border: none; width: 1280px; height: 720px; display: block; margin: 0 auto 20px; }
+    </style>
+</head>
+<body>
+    <iframe title="Slide 1" srcdoc='&lt;!DOCTYPE html&gt;
+
+&lt;html data-theme=&quot;light&quot; lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot;/&gt;
+&lt;title&gt;Cover Slide&lt;/title&gt;
+&lt;link href=&quot;https://fonts.googleapis.com&quot; rel=&quot;preconnect&quot;/&gt;
+&lt;link crossorigin=&quot;&quot; href=&quot;https://fonts.gstatic.com&quot; rel=&quot;preconnect&quot;/&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;style&gt;
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: &#x27;Inter&#x27;, sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
+        }
+        .top-accent {
+            height: 7px;
+            background-color: #00A3E0;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+        }
+        .bottom-accent {
+            height: 7px;
+            background-color: #005f56;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 5;
+        }
+        .logo-1ds {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            height: 38px;
+            width: auto;
+            z-index: 214;
+            object-fit: contain;
+        }
+        .vertical-bar {
+            position: absolute;
+            left: 80px;
+            top: 64px;
+            width: 4px;
+            height: 40px;
+            background-color: #00A3E0;
+            z-index: 200;
+        }
+        .horizontal-bar {
+            position: absolute;
+            left: 80px;
+            top: 431px;
+            width: 96px;
+            height: 8px;
+            background-color: #00A3E0;
+            z-index: 200;
+        }
+        .product-image {
+             position: absolute; 
+             left: 793px; 
+             top: 72px; 
+             width: 275.708px; 
+             height: 449.891px; 
+             z-index: 213; 
+             object-fit: contain; 
+             transform: translate(65.1501px, 115.128px);
+        }
+        .bg-shape-right {
+            position: absolute; 
+            left: 852.49px; 
+            top: 0px; 
+            width: 427.01px; 
+            height: 720px; 
+            z-index: 1;
+        }
+        .bg-circle {
+            position: absolute; 
+            left: 680.16px; 
+            top: 109.88px; 
+            width: 600px; 
+            height: 600px; 
+            background-color: #ffffff; 
+            border-radius: 50%; 
+            z-index: 2;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;slide-container&quot;&gt;
+&lt;!-- Background Shapes --&gt;
+&lt;div class=&quot;bg-shape-right&quot;&gt;
+&lt;svg height=&quot;100%&quot; preserveaspectratio=&quot;none&quot; viewbox=&quot;0 0 4067251 6858000&quot; width=&quot;100%&quot;&gt;
+&lt;path d=&quot;M 813450 0 L 4067251 0 L 4067251 6858000 L 0 6858000 Z&quot; fill=&quot;#e0f2f1&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bg-circle&quot;&gt;&lt;/div&gt;
+&lt;!-- Top Bar --&gt;
+&lt;div class=&quot;top-accent&quot;&gt;&lt;/div&gt;
+&lt;!-- Bottom Bar --&gt;
+&lt;div class=&quot;bottom-accent&quot;&gt;&lt;/div&gt;
+&lt;!-- Vertical Header Bar --&gt;
+&lt;div class=&quot;vertical-bar&quot;&gt;&lt;/div&gt;
+&lt;!-- Horizontal Content Bar --&gt;
+&lt;div class=&quot;horizontal-bar&quot;&gt;&lt;/div&gt;
+&lt;!-- Images --&gt;
+&lt;img alt=&quot;Icon&quot; src=&quot;&lt;icon1&gt;&quot; style=&quot;position: absolute; left: 80px; top: 477px; width: 16px; height: 16px; z-index: 209; object-fit: contain;&quot;/&gt;
+&lt;img alt=&quot;Product&quot; class=&quot;product-image&quot; src=&quot;&lt;product_image1&gt;&quot;/&gt;
+&lt;img alt=&quot;Brand Logo&quot; class=&quot;logo-1ds&quot; src=&quot;&lt;logo1&gt;&quot;/&gt;
+&lt;!-- Text Elements --&gt;
+&lt;div style=&quot;position: absolute; left: 100px; top: 74px; width: 400px; height: 20px; z-index: 205;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 13.33px; font-weight: 700; color: #6b7280; letter-spacing: 0.1em;&quot;&gt;
+            &lt;brand1&gt; | &lt;report_type&gt;
+        &lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 80px; top: 209px; width: 685px; height: 32px; z-index: 206;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 24px; font-weight: 700; color: #c5a065;&quot;&gt;
+            &lt;product_line1&gt;
+        &lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 80px; top: 249px; width: 712px; height: 160px; z-index: 207;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 60px; font-weight: 700; color: #1f2937; margin-bottom: 0; line-height: 1.1;&quot;&gt;
+            &lt;headline_line1&gt;
+        &lt;/p&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 60px; font-weight: 700; color: #00A3E0; margin-top: -5px; line-height: 1.1;&quot;&gt;
+            &lt;headline_line2&gt;
+        &lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 108px; top: 471px; width: 337px; height: 28px; z-index: 210; display: flex; align-items: center;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 20px; font-weight: 400; color: #4b5563;&quot;&gt;
+            &lt;report_subtitle&gt;
+        &lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 446px; top: 473px; width: 17px; height: 23px; z-index: 212;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 16px; font-weight: 400; color: #d1d5db;&quot;&gt;
+            |
+        &lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 467px; top: 471px; width: 180px; height: 28px; z-index: 211;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 20px; font-weight: 400; color: #4b5563;&quot;&gt;
+            &lt;report_month&gt;
+        &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'></iframe>
+    <iframe title="Slide 2" srcdoc='&lt;!DOCTYPE html&gt;
+
+&lt;html data-theme=&quot;light&quot; lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;meta content=&quot;width=1280, height=720, initial-scale=1.0&quot; name=&quot;viewport&quot;/&gt;
+&lt;title&gt;Key Category Insights&lt;/title&gt;
+&lt;link href=&quot;https://fonts.googleapis.com&quot; rel=&quot;preconnect&quot;/&gt;
+&lt;link crossorigin=&quot;&quot; href=&quot;https://fonts.gstatic.com&quot; rel=&quot;preconnect&quot;/&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;style&gt;
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1280px;
+            height: 720px;
+            font-family: &#x27;Inter&#x27;, sans-serif;
+            background-color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-accent {
+            height: 7px;
+            background-color: #00A3E0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .logo-1ds {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            height: 28px;
+            width: auto;
+            z-index: 10;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            height: 713px;
+            position: relative;
+            padding: 40px 48px;
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1f2937;
+            line-height: 1.2;
+            margin-bottom: 40px;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            height: 480px;
+        }
+
+        .insight-card {
+            flex: 1;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 16px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1f2937;
+        }
+
+        .card-body {
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .insight-item {
+            background-color: #F3F4F6;
+            border-left: 4px solid #00A3E0;
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .insight-text {
+            font-size: 15px;
+            color: #4b5563;
+            line-height: 1.5;
+        }
+
+        .highlight-text {
+            color: #00A3E0;
+            font-weight: 700;
+        }
+        
+        .highlight-negative {
+            color: #EF4444;
+            font-weight: 700;
+        }
+
+        .card-1 .icon-box { background-color: #E0F2FE; color: #00A3E0; }
+        .card-2 .icon-box { background-color: #EFF6FF; color: #3B82F6; }
+        .card-3 .icon-box { background-color: #FEF3C7; color: #D97706; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;top-accent&quot;&gt;&lt;/div&gt;
+&lt;img alt=&quot;Brand Logo&quot; class=&quot;logo-1ds&quot; src=&quot;&lt;logo1&gt;&quot;/&gt;
+&lt;div class=&quot;slide-container&quot;&gt;
+&lt;h1 class=&quot;main-title&quot;&gt;&lt;slide_title1&gt;&lt;/h1&gt;
+&lt;div class=&quot;cards-container&quot;&gt;
+&lt;div class=&quot;insight-card card-1&quot;&gt;
+&lt;div class=&quot;card-header&quot;&gt;
+&lt;div class=&quot;icon-box&quot;&gt;
+&lt;i class=&quot;fas fa-chart-line text-2xl&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-title&quot;&gt;&lt;insight_category1&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-body&quot;&gt;
+&lt;div class=&quot;insight-item&quot;&gt;
+&lt;p class=&quot;insight-text&quot;&gt;&lt;insight1_sentence1&gt; &lt;span class=&quot;highlight-text&quot;&gt;&lt;metric1&gt;&lt;/span&gt; &lt;insight1_sentence2&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;insight-item&quot;&gt;
+&lt;p class=&quot;insight-text&quot;&gt;&lt;insight1_sentence3&gt; &lt;span class=&quot;highlight-text&quot;&gt;&lt;metric2&gt;&lt;/span&gt; &lt;insight1_sentence4&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;insight-item&quot;&gt;
+&lt;p class=&quot;insight-text&quot;&gt;&lt;insight1_sentence5&gt; &lt;span class=&quot;highlight-text&quot;&gt;&lt;metric3&gt;&lt;/span&gt; &lt;insight1_sentence6&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;insight-card card-2&quot;&gt;
+&lt;div class=&quot;card-header&quot;&gt;
+&lt;div class=&quot;icon-box&quot;&gt;
+&lt;i class=&quot;fas fa-bullhorn text-2xl&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-title&quot;&gt;&lt;insight_category2&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-body&quot;&gt;
+&lt;div class=&quot;insight-item&quot;&gt;
+&lt;p class=&quot;insight-text&quot;&gt;&lt;insight2_sentence1&gt; &lt;span class=&quot;highlight-text&quot;&gt;&lt;metric4&gt;&lt;/span&gt; &lt;insight2_sentence2&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;insight-item&quot;&gt;
+&lt;p class=&quot;insight-text&quot;&gt;&lt;insight2_sentence3&gt; &lt;span class=&quot;highlight-text&quot;&gt;&lt;metric5&gt;&lt;/span&gt; &lt;insight2_sentence4&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;insight-item&quot;&gt;
+&lt;p class=&quot;insight-text&quot;&gt;&lt;insight2_sentence5&gt; &lt;span class=&quot;highlight-text&quot;&gt;&lt;metric6&gt;&lt;/span&gt; &lt;insight2_sentence6&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;insight-card card-3&quot;&gt;
+&lt;div class=&quot;card-header&quot;&gt;
+&lt;div class=&quot;icon-box&quot;&gt;
+&lt;i class=&quot;fas fa-box-open text-2xl&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-title&quot;&gt;&lt;insight_category3&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-body&quot;&gt;
+&lt;div class=&quot;insight-item&quot;&gt;
+&lt;p class=&quot;insight-text&quot;&gt;&lt;insight3_sentence1&gt; &lt;span class=&quot;highlight-text&quot;&gt;&lt;metric7&gt;&lt;/span&gt; &lt;insight3_sentence2&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;insight-item&quot;&gt;
+&lt;p class=&quot;insight-text&quot;&gt;&lt;insight3_sentence3&gt; &lt;span class=&quot;highlight-negative&quot;&gt;&lt;metric8&gt;&lt;/span&gt; &lt;insight3_sentence4&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;insight-item&quot;&gt;
+&lt;p class=&quot;insight-text&quot;&gt;&lt;insight3_sentence5&gt; &lt;span class=&quot;highlight-text&quot;&gt;&lt;metric9&gt;&lt;/span&gt; &lt;insight3_sentence6&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'></iframe>
+    <iframe title="Slide 3" srcdoc='&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;meta content=&quot;width=1280, height=720, initial-scale=1.0&quot; name=&quot;viewport&quot;/&gt;
+&lt;title&gt;Plan vs Achievement &amp;amp; Monthly Trends&lt;/title&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;style&gt;
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1280px;
+            height: 720px;
+            font-family: &#x27;Inter&#x27;, sans-serif;
+            background-color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-accent {
+            height: 7px;
+            background-color: #00A3E0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .logo-1ds {
+            position: absolute;
+            top: 24px;
+            right: 40px;
+            height: 28px;
+            width: auto;
+            z-index: 10;
+        }
+
+        .slide-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-top: 30px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        .metric-widget {
+            display: flex;
+            flex-direction: column;
+            border-left: 4px solid #00A3E0;
+            padding-left: 12px;
+            margin-right: 40px;
+        }
+        .metric-label {
+            font-size: 12px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        .metric-value {
+            font-size: 16px;
+            font-weight: 700;
+            color: #00A3E0;
+        }
+
+        .data-table-container {
+            width: 1200px;
+            margin-left: 40px;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+            table-layout: fixed;
+        }
+
+        th {
+            background-color: #00A3E0;
+            color: white;
+            font-weight: 600;
+            padding: 8px 4px;
+            text-align: center;
+            border: 1px solid white;
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 4px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            color: #374151;
+            white-space: nowrap;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .text-green { color: #10b981; font-weight: 600; }
+        .text-red { color: #ef4444; font-weight: 600; }
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 40px;
+        }
+        .section-icon {
+            color: #00A3E0;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #374151;
+        }
+        
+        .table-row-compact td {
+            padding: 3px 4px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;slide-container&quot;&gt;
+&lt;div class=&quot;top-accent&quot;&gt;&lt;/div&gt;
+&lt;img alt=&quot;Brand Logo&quot; class=&quot;logo-1ds&quot; src=&quot;&lt;logo1&gt;&quot;/&gt;
+&lt;div class=&quot;flex justify-between items-start&quot;&gt;
+&lt;h1 class=&quot;slide-title&quot;&gt;&lt;slide_title2&gt;&lt;/h1&gt;
+&lt;div class=&quot;flex absolute top-24 right-10&quot;&gt;
+&lt;div class=&quot;metric-widget&quot;&gt;
+&lt;span class=&quot;metric-label&quot;&gt;&lt;metric_label1&gt;&lt;/span&gt;
+&lt;span class=&quot;metric-value&quot;&gt;&lt;metric_value1&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;metric-widget&quot;&gt;
+&lt;span class=&quot;metric-label&quot;&gt;&lt;metric_label2&gt;&lt;/span&gt;
+&lt;span class=&quot;metric-value&quot;&gt;&lt;metric_value2&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;metric-widget&quot;&gt;
+&lt;span class=&quot;metric-label&quot;&gt;&lt;metric_label3&gt;&lt;/span&gt;
+&lt;span class=&quot;metric-value&quot;&gt;&lt;metric_value3&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;metric-widget&quot; style=&quot;margin-right: 0;&quot;&gt;
+&lt;span class=&quot;metric-label&quot;&gt;&lt;metric_label4&gt;&lt;/span&gt;
+&lt;span class=&quot;metric-value&quot;&gt;&lt;metric_value4&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section-header&quot;&gt;
+&lt;i class=&quot;fas fa-chart-line section-icon&quot;&gt;&lt;/i&gt;
+&lt;h2 class=&quot;section-title&quot;&gt;&lt;section_title1&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;data-table-container&quot;&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 80px;&quot;/&gt;
+&lt;col style=&quot;width: 60px;&quot;/&gt;
+&lt;col style=&quot;width: 70px;&quot;/&gt;
+&lt;col style=&quot;width: 80px;&quot;/&gt;
+&lt;col style=&quot;width: 60px;&quot;/&gt;
+&lt;col style=&quot;width: 50px;&quot;/&gt;
+&lt;col style=&quot;width: 50px;&quot;/&gt;
+&lt;col style=&quot;width: 50px;&quot;/&gt;
+&lt;col style=&quot;width: 70px;&quot;/&gt;
+&lt;col style=&quot;width: 60px;&quot;/&gt;
+&lt;col style=&quot;width: 60px;&quot;/&gt;
+&lt;col style=&quot;width: 60px;&quot;/&gt;
+&lt;col style=&quot;width: 70px;&quot;/&gt;
+&lt;col style=&quot;width: 70px;&quot;/&gt;
+&lt;col style=&quot;width: 60px;&quot;/&gt;
+&lt;col style=&quot;width: 60px;&quot;/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;TYPE&lt;/th&gt;
+&lt;th&gt;MONTH&lt;/th&gt;
+&lt;th&gt;SPEND&lt;/th&gt;
+&lt;th&gt;IMPR.&lt;/th&gt;
+&lt;th&gt;CLICK&lt;/th&gt;
+&lt;th&gt;CPC&lt;/th&gt;
+&lt;th&gt;CTR&lt;/th&gt;
+&lt;th&gt;CVR&lt;/th&gt;
+&lt;th&gt;SALE&lt;/th&gt;
+&lt;th&gt;ORDERS&lt;/th&gt;
+&lt;th&gt;AD ROAS&lt;/th&gt;
+&lt;th&gt;AD AOV&lt;/th&gt;
+&lt;th&gt;OFFTAKE REV&lt;/th&gt;
+&lt;th&gt;OFFTAKE UNITS&lt;/th&gt;
+&lt;th&gt;T ROAS&lt;/th&gt;
+&lt;th&gt;T AOV&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;table-row-compact&quot;&gt;
+&lt;td&gt;&lt;row_type1&gt;&lt;/td&gt;
+&lt;td&gt;&lt;month1&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value1&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value2&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value3&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value4&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value5&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value6&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value7&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value8&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value9&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value10&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value11&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value12&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value13&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value14&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;table-row-compact&quot;&gt;
+&lt;td&gt;&lt;row_type2&gt;&lt;/td&gt;
+&lt;td&gt;&lt;month2&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value15&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value16&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value17&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value18&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value19&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value20&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value21&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value22&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value23&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value24&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value25&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value26&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value27&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value28&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'></iframe>
+    <iframe title="Slide 4" srcdoc='&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot;/&gt;
+&lt;title&gt;Weekly Performance Trends&lt;/title&gt;
+&lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;style&gt;
+        body {
+            font-family: &#x27;Inter&#x27;, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .top-accent {
+            height: 7px;
+            background-color: #00A3E0;
+            width: 100%;
+        }
+        .table-container th, .table-container td {
+            padding: 8px 4px;
+            border: 1px solid #e5e7eb;
+            white-space: nowrap;
+        }
+        .table-container th {
+            background-color: #00A3E0;
+            color: white;
+            font-weight: 600;
+        }
+        .table-container tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        .highlight-card {
+            background-color: #F3F4F6;
+            border-left: 4px solid #00A3E0;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;slide-container&quot;&gt;
+&lt;div class=&quot;top-accent&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;flex justify-between items-start px-10 pt-6 mb-4&quot;&gt;
+&lt;div&gt;
+&lt;h1 class=&quot;text-3xl font-bold text-gray-800 tracking-tight&quot;&gt;&lt;slide_title3&gt;&lt;/h1&gt;
+&lt;p class=&quot;text-sm text-gray-500 mt-1&quot;&gt;&lt;slide_subtitle1&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;img alt=&quot;Brand Logo&quot; class=&quot;h-8 object-contain&quot; src=&quot;&lt;logo1&gt;&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;px-10 mb-6 grid grid-cols-4 gap-6&quot;&gt;
+&lt;div class=&quot;highlight-card p-3 rounded-r-md flex flex-col justify-center&quot;&gt;
+&lt;span class=&quot;text-xs font-medium text-gray-500 uppercase tracking-wider&quot;&gt;&lt;metric_label1&gt;&lt;/span&gt;
+&lt;span class=&quot;text-xl font-bold text-[#00A3E0]&quot;&gt;&lt;metric_value1&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlight-card p-3 rounded-r-md flex flex-col justify-center&quot;&gt;
+&lt;span class=&quot;text-xs font-medium text-gray-500 uppercase tracking-wider&quot;&gt;&lt;metric_label2&gt;&lt;/span&gt;
+&lt;span class=&quot;text-xl font-bold text-[#00A3E0]&quot;&gt;&lt;metric_value2&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlight-card p-3 rounded-r-md flex flex-col justify-center&quot;&gt;
+&lt;span class=&quot;text-xs font-medium text-gray-500 uppercase tracking-wider&quot;&gt;&lt;metric_label3&gt;&lt;/span&gt;
+&lt;span class=&quot;text-xl font-bold text-[#00A3E0]&quot;&gt;&lt;metric_value3&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlight-card p-3 rounded-r-md flex flex-col justify-center&quot;&gt;
+&lt;span class=&quot;text-xs font-medium text-gray-500 uppercase tracking-wider&quot;&gt;&lt;metric_label4&gt;&lt;/span&gt;
+&lt;span class=&quot;text-xl font-bold text-[#00A3E0]&quot;&gt;&lt;metric_value4&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-grow px-10 pb-8 flex items-start&quot;&gt;
+&lt;div class=&quot;w-full overflow-hidden rounded-lg shadow-sm border border-gray-200&quot;&gt;
+&lt;table class=&quot;w-full text-[11px] text-center table-container border-collapse&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;TYPE&lt;/th&gt;
+&lt;th&gt;WEEK&lt;/th&gt;
+&lt;th&gt;SPEND&lt;/th&gt;
+&lt;th&gt;IMPR.&lt;/th&gt;
+&lt;th&gt;CLICK&lt;/th&gt;
+&lt;th&gt;CPC&lt;/th&gt;
+&lt;th&gt;CTR&lt;/th&gt;
+&lt;th&gt;CVR&lt;/th&gt;
+&lt;th&gt;SALE&lt;/th&gt;
+&lt;th&gt;ORDERS&lt;/th&gt;
+&lt;th&gt;AD ROAS&lt;/th&gt;
+&lt;th&gt;AD AOV&lt;/th&gt;
+&lt;th&gt;OFFTAKE&lt;br/&gt;REV&lt;/th&gt;
+&lt;th&gt;OFFTAKE&lt;br/&gt;UNITS&lt;/th&gt;
+&lt;th&gt;T ROAS&lt;/th&gt;
+&lt;th&gt;T AOV&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody class=&quot;text-gray-700&quot;&gt;
+&lt;tr&gt;
+&lt;td class=&quot;font-medium text-gray-900&quot;&gt;&lt;row_type1&gt;&lt;/td&gt;
+&lt;td class=&quot;font-medium&quot;&gt;&lt;week1&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value1&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value2&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value3&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value4&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value5&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value6&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value7&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value8&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value9&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value10&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value11&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value12&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value13&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value14&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;font-medium text-gray-900&quot;&gt;&lt;row_type2&gt;&lt;/td&gt;
+&lt;td class=&quot;font-medium&quot;&gt;&lt;week2&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value15&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value16&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value17&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value18&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value19&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value20&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value21&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value22&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value23&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value24&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value25&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value26&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value27&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value28&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'></iframe>
+    <iframe title="Slide 5" srcdoc='&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot;/&gt;
+&lt;title&gt;Performance by Ad Type / Campaign Type&lt;/title&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;style&gt;
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1280px;
+            height: 720px;
+            font-family: &#x27;Inter&#x27;, sans-serif;
+            background-color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .bg-brand-blue { background-color: #00A3E0; }
+        .text-brand-blue { color: #00A3E0; }
+        .border-brand-blue { border-color: #00A3E0; }
+        
+        .bg-brand-gray { background-color: #374151; }
+        .bg-highlight-blue { background-color: #E6F6FC; }
+        
+        .logo-1ds {
+            position: absolute;
+            top: 24px;
+            right: 40px;
+            height: 32px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .custom-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 11px;
+            line-height: 1.2;
+        }
+        
+        .custom-table th, .custom-table td {
+            border: 1px solid #E5E7EB;
+            padding: 4px 2px;
+            text-align: center;
+        }
+
+        .header-main {
+            background-color: #00A3E0;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .header-secondary {
+            background-color: #F3F4F6;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        .subheader {
+            background-color: #F9FAFB;
+            color: #4B5563;
+            font-weight: 600;
+            font-size: 10px;
+        }
+        
+        .subheader-highlight {
+            background-color: #E6F6FC;
+            color: #00A3E0;
+            font-weight: 700;
+        }
+
+        .section-header {
+            background-color: #FFFFFF;
+            color: #00A3E0;
+            font-weight: 700;
+            font-size: 13px;
+            text-align: left;
+            padding-left: 12px !important;
+            border-top: 2px solid #E5E7EB;
+        }
+        
+        .row-even { background-color: #FFFFFF; }
+        .row-odd { background-color: #F9FAFB; }
+        
+        .col-dec {
+            background-color: #E6F6FC;
+            font-weight: 600;
+            color: #111827;
+            border-left: 1px solid #00A3E0;
+            border-right: 1px solid #00A3E0;
+        }
+        
+        .col-dec-odd {
+             background-color: #DBF0FA;
+             font-weight: 600;
+             color: #111827;
+             border-left: 1px solid #00A3E0;
+             border-right: 1px solid #00A3E0;
+        }
+
+        .metric-cell {
+            white-space: nowrap;
+        }
+
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;h-2 w-full bg-brand-blue flex-shrink-0&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;px-10 pt-6 pb-2 relative flex-shrink-0&quot;&gt;
+&lt;h1 class=&quot;text-3xl font-bold text-gray-800&quot;&gt;&lt;slide_title4&gt;&lt;/h1&gt;
+&lt;img alt=&quot;Brand Logo&quot; class=&quot;logo-1ds&quot; src=&quot;&lt;logo1&gt;&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-grow px-8 pt-2 pb-8 flex items-center justify-center&quot;&gt;
+&lt;div class=&quot;w-full h-full overflow-hidden flex flex-col justify-center&quot;&gt;
+&lt;table class=&quot;custom-table&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&quot;border-none bg-white&quot; style=&quot;width: 140px;&quot;&gt;&lt;/th&gt;
+&lt;th class=&quot;header-main border-brand-blue&quot; colspan=&quot;6&quot; style=&quot;border-bottom: none;&quot;&gt;&lt;month_label1&gt;&lt;/th&gt;
+&lt;th class=&quot;header-secondary&quot; colspan=&quot;6&quot;&gt;&lt;month_label2&gt;&lt;/th&gt;
+&lt;th class=&quot;header-secondary&quot; colspan=&quot;6&quot;&gt;&lt;month_label3&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th class=&quot;text-left pl-3 bg-gray-100 text-gray-700 font-bold border-b-2 border-gray-300&quot;&gt;Type / Metrics&lt;/th&gt;
+&lt;th class=&quot;subheader-highlight border-l border-brand-blue&quot;&gt;%Spend&lt;/th&gt;
+&lt;th class=&quot;subheader-highlight&quot;&gt;%Sales&lt;/th&gt;
+&lt;th class=&quot;subheader-highlight&quot;&gt;CTR&lt;/th&gt;
+&lt;th class=&quot;subheader-highlight&quot;&gt;CVR&lt;/th&gt;
+&lt;th class=&quot;subheader-highlight&quot;&gt;CPC&lt;/th&gt;
+&lt;th class=&quot;subheader-highlight border-r border-brand-blue&quot;&gt;ROAS&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;%Spend&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;%Sales&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;CTR&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;CVR&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;CPC&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;ROAS&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;%Spend&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;%Sales&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;CTR&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;CVR&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;CPC&lt;/th&gt;
+&lt;th class=&quot;subheader&quot;&gt;ROAS&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;section-header&quot; colspan=&quot;19&quot;&gt;Campaign Type wise Performance&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;row-even&quot;&gt;
+&lt;td class=&quot;font-bold text-left pl-3 text-gray-800&quot;&gt;&lt;campaign_type1&gt;&lt;/td&gt;
+&lt;td class=&quot;col-dec&quot;&gt;&lt;value1&gt;&lt;/td&gt;&lt;td class=&quot;col-dec&quot;&gt;&lt;value2&gt;&lt;/td&gt;&lt;td class=&quot;col-dec&quot;&gt;&lt;value3&gt;&lt;/td&gt;&lt;td class=&quot;col-dec&quot;&gt;&lt;value4&gt;&lt;/td&gt;&lt;td class=&quot;col-dec&quot;&gt;&lt;value5&gt;&lt;/td&gt;&lt;td class=&quot;col-dec&quot;&gt;&lt;value6&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value7&gt;&lt;/td&gt;&lt;td&gt;&lt;value8&gt;&lt;/td&gt;&lt;td&gt;&lt;value9&gt;&lt;/td&gt;&lt;td&gt;&lt;value10&gt;&lt;/td&gt;&lt;td&gt;&lt;value11&gt;&lt;/td&gt;&lt;td&gt;&lt;value12&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value13&gt;&lt;/td&gt;&lt;td&gt;&lt;value14&gt;&lt;/td&gt;&lt;td&gt;&lt;value15&gt;&lt;/td&gt;&lt;td&gt;&lt;value16&gt;&lt;/td&gt;&lt;td&gt;&lt;value17&gt;&lt;/td&gt;&lt;td&gt;&lt;value18&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;row-odd&quot;&gt;
+&lt;td class=&quot;font-bold text-left pl-3 text-gray-800&quot;&gt;&lt;campaign_type2&gt;&lt;/td&gt;
+&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value19&gt;&lt;/td&gt;&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value20&gt;&lt;/td&gt;&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value21&gt;&lt;/td&gt;&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value22&gt;&lt;/td&gt;&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value23&gt;&lt;/td&gt;&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value24&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value25&gt;&lt;/td&gt;&lt;td&gt;&lt;value26&gt;&lt;/td&gt;&lt;td&gt;&lt;value27&gt;&lt;/td&gt;&lt;td&gt;&lt;value28&gt;&lt;/td&gt;&lt;td&gt;&lt;value29&gt;&lt;/td&gt;&lt;td&gt;&lt;value30&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value31&gt;&lt;/td&gt;&lt;td&gt;&lt;value32&gt;&lt;/td&gt;&lt;td&gt;&lt;value33&gt;&lt;/td&gt;&lt;td&gt;&lt;value34&gt;&lt;/td&gt;&lt;td&gt;&lt;value35&gt;&lt;/td&gt;&lt;td&gt;&lt;value36&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;section-header&quot; colspan=&quot;19&quot;&gt;Ad Type wise Performance&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;row-odd&quot;&gt;
+&lt;td class=&quot;font-bold text-left pl-3 text-gray-800&quot;&gt;&lt;ad_type1&gt;&lt;/td&gt;
+&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value37&gt;&lt;/td&gt;&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value38&gt;&lt;/td&gt;&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value39&gt;&lt;/td&gt;&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value40&gt;&lt;/td&gt;&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value41&gt;&lt;/td&gt;&lt;td class=&quot;col-dec-odd&quot;&gt;&lt;value42&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value43&gt;&lt;/td&gt;&lt;td&gt;&lt;value44&gt;&lt;/td&gt;&lt;td&gt;&lt;value45&gt;&lt;/td&gt;&lt;td&gt;&lt;value46&gt;&lt;/td&gt;&lt;td&gt;&lt;value47&gt;&lt;/td&gt;&lt;td&gt;&lt;value48&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value49&gt;&lt;/td&gt;&lt;td&gt;&lt;value50&gt;&lt;/td&gt;&lt;td&gt;&lt;value51&gt;&lt;/td&gt;&lt;td&gt;&lt;value52&gt;&lt;/td&gt;&lt;td&gt;&lt;value53&gt;&lt;/td&gt;&lt;td&gt;&lt;value54&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;row-even&quot;&gt;
+&lt;td class=&quot;font-bold text-left pl-3 text-gray-800&quot;&gt;&lt;ad_type2&gt;&lt;/td&gt;
+&lt;td class=&quot;col-dec&quot;&gt;&lt;value55&gt;&lt;/td&gt;&lt;td class=&quot;col-dec&quot;&gt;&lt;value56&gt;&lt;/td&gt;&lt;td class=&quot;col-dec&quot;&gt;&lt;value57&gt;&lt;/td&gt;&lt;td class=&quot;col-dec&quot;&gt;&lt;value58&gt;&lt;/td&gt;&lt;td class=&quot;col-dec&quot;&gt;&lt;value59&gt;&lt;/td&gt;&lt;td class=&quot;col-dec&quot;&gt;&lt;value60&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value61&gt;&lt;/td&gt;&lt;td&gt;&lt;value62&gt;&lt;/td&gt;&lt;td&gt;&lt;value63&gt;&lt;/td&gt;&lt;td&gt;&lt;value64&gt;&lt;/td&gt;&lt;td&gt;&lt;value65&gt;&lt;/td&gt;&lt;td&gt;&lt;value66&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value67&gt;&lt;/td&gt;&lt;td&gt;&lt;value68&gt;&lt;/td&gt;&lt;td&gt;&lt;value69&gt;&lt;/td&gt;&lt;td&gt;&lt;value70&gt;&lt;/td&gt;&lt;td&gt;&lt;value71&gt;&lt;/td&gt;&lt;td&gt;&lt;value72&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'></iframe>
+    <iframe title="Slide 6" srcdoc='&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;meta content=&quot;width=1280, height=720, initial-scale=1.0&quot; name=&quot;viewport&quot;/&gt;
+&lt;title&gt;Product Wise Performance&lt;/title&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;style&gt;
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            background-color: #ffffff;
+            overflow: hidden;
+            font-family: &#x27;Inter&#x27;, sans-serif;
+        }
+
+        .top-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 7px;
+            background-color: #00A3E0;
+            z-index: 10;
+        }
+
+        .logo-1ds {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            height: 28px;
+            width: auto;
+            z-index: 205;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
+        }
+
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%;
+            font-family: &#x27;Inter&#x27;, sans-serif;
+        }
+
+        td {
+            padding: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        .header-table td {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14.67px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #00A3E0;
+            border-right: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .header-table td:last-child {
+            border-right: none;
+        }
+
+        .data-table td {
+            color: #1f2937;
+            font-size: 12px;
+            text-align: center;
+            vertical-align: middle;
+            border-bottom: 1px solid #e5e7eb;
+            height: 29px;
+        }
+        
+        .data-table tr td:first-child { 
+            font-size: 13.33px; 
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .col-title { width: 85.91px; }
+        .col-spend { width: 81.66px; }
+        .col-impr { width: 83.80px; }
+        .col-click { width: 70.15px; }
+        .col-cpc { width: 71.08px; }
+        .col-ctr { width: 81.55px; }
+        .col-cvr { width: 62.97px; }
+        .col-sale { width: 79.48px; }
+        .col-orders { width: 78.45px; }
+        .col-adroas { width: 69.16px; }
+        .col-adaov { width: 57.61px; }
+        .col-offrev { width: 74.83px; }
+        .col-offunits { width: 86.97px; }
+        .col-troas { width: 74.99px; }
+        .col-taov { width: 78.24px; }
+        .col-avail { width: 59.10px; }
+
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;slide-container&quot;&gt;
+&lt;div class=&quot;top-bar&quot;&gt;&lt;/div&gt;
+&lt;img alt=&quot;Brand Logo&quot; class=&quot;logo-1ds&quot; src=&quot;&lt;logo1&gt;&quot;/&gt;
+&lt;div style=&quot;position: absolute; left: 40px; top: 48px; width: 600px; height: 36px; z-index: 203;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 29.33px; font-weight: 700; color: #1f2937;&quot;&gt;&lt;slide_title5&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 978px; top: 72px; width: 8px; height: 8px; background-color: #10b981; border-radius: 50%;&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 994px; top: 68px; width: 105px; height: 16px;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 12px; color: #6b7280;&quot;&gt;&lt;legend_high&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 1113px; top: 72px; width: 8px; height: 8px; background-color: #ef4444; border-radius: 50%;&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 1129px; top: 68px; width: 120px; height: 16px;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 12px; color: #6b7280;&quot;&gt;&lt;legend_critical&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 43px; top: 99px; width: 1196px; height: 39px; z-index: 100;&quot;&gt;
+&lt;table class=&quot;header-table&quot; style=&quot;height: 100%;&quot;&gt;
+&lt;colgroup&gt;
+&lt;col class=&quot;col-title&quot;/&gt;
+&lt;col class=&quot;col-spend&quot;/&gt;
+&lt;col class=&quot;col-impr&quot;/&gt;
+&lt;col class=&quot;col-click&quot;/&gt;
+&lt;col class=&quot;col-cpc&quot;/&gt;
+&lt;col class=&quot;col-ctr&quot;/&gt;
+&lt;col class=&quot;col-cvr&quot;/&gt;
+&lt;col class=&quot;col-sale&quot;/&gt;
+&lt;col class=&quot;col-orders&quot;/&gt;
+&lt;col class=&quot;col-adroas&quot;/&gt;
+&lt;col class=&quot;col-adaov&quot;/&gt;
+&lt;col class=&quot;col-offrev&quot;/&gt;
+&lt;col class=&quot;col-offunits&quot;/&gt;
+&lt;col class=&quot;col-troas&quot;/&gt;
+&lt;col class=&quot;col-taov&quot;/&gt;
+&lt;col class=&quot;col-avail&quot;/&gt;
+&lt;/colgroup&gt;
+&lt;tr&gt;
+&lt;td&gt;TITLE&lt;/td&gt;
+&lt;td&gt;SPEND&lt;/td&gt;
+&lt;td&gt;IMPR.&lt;/td&gt;
+&lt;td&gt;CLICK&lt;/td&gt;
+&lt;td&gt;CPC&lt;/td&gt;
+&lt;td&gt;CTR&lt;/td&gt;
+&lt;td&gt;CVR&lt;/td&gt;
+&lt;td&gt;SALE&lt;/td&gt;
+&lt;td&gt;ORDERS&lt;/td&gt;
+&lt;td style=&quot;line-height: 1.1;&quot;&gt;AD&lt;br/&gt;ROAS&lt;/td&gt;
+&lt;td style=&quot;line-height: 1.1;&quot;&gt;AD&lt;br/&gt;AOV&lt;/td&gt;
+&lt;td style=&quot;font-size: 12px; line-height: 1.1;&quot;&gt;OFFTAKE&lt;br/&gt;REV&lt;/td&gt;
+&lt;td style=&quot;font-size: 12px; line-height: 1.1;&quot;&gt;OFFTAKE&lt;br/&gt;UNITS&lt;/td&gt;
+&lt;td&gt;T ROAS&lt;/td&gt;
+&lt;td&gt;T AOV&lt;/td&gt;
+&lt;td style=&quot;font-size: 10.67px; line-height: 1.1;&quot;&gt;%&lt;br/&gt;AVAILABI&lt;br/&gt;LITY&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 41px; top: 138px; width: 1198px; height: 52px; background-color: #F0F9FF; z-index: 5;&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 53px; top: 147px; width: 32px; height: 32px; background-color: white; border-radius: 2px; display: flex; align-items: center; justify-content: center; z-index: 6; box-shadow: 0 1px 3px rgba(0,0,0,0.1);&quot;&gt;
+&lt;svg fill=&quot;#00A3E0&quot; height=&quot;24&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;16&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;path d=&quot;M7 2h10v22H7z&quot; opacity=&quot;0.3&quot;&gt;&lt;/path&gt;
+&lt;path d=&quot;M9 6h6v14H9z&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 97px; top: 146px; width: 968px; height: 20px; z-index: 20;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 13.33px; font-weight: 700; color: #00A3E0;&quot;&gt;&lt;product_title1&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 97px; top: 166px; width: 965px; height: 15px; z-index: 20;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 10.67px; color: #6b7280;&quot;&gt;&lt;product_subtitle1&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 41px; top: 190px; width: 1198px; height: 58px; z-index: 50;&quot;&gt;
+&lt;table class=&quot;data-table&quot;&gt;
+&lt;colgroup&gt;
+&lt;col class=&quot;col-title&quot;/&gt;
+&lt;col class=&quot;col-spend&quot;/&gt;
+&lt;col class=&quot;col-impr&quot;/&gt;
+&lt;col class=&quot;col-click&quot;/&gt;
+&lt;col class=&quot;col-cpc&quot;/&gt;
+&lt;col class=&quot;col-ctr&quot;/&gt;
+&lt;col class=&quot;col-cvr&quot;/&gt;
+&lt;col class=&quot;col-sale&quot;/&gt;
+&lt;col class=&quot;col-orders&quot;/&gt;
+&lt;col class=&quot;col-adroas&quot;/&gt;
+&lt;col class=&quot;col-adaov&quot;/&gt;
+&lt;col class=&quot;col-offrev&quot;/&gt;
+&lt;col class=&quot;col-offunits&quot;/&gt;
+&lt;col class=&quot;col-troas&quot;/&gt;
+&lt;col class=&quot;col-taov&quot;/&gt;
+&lt;col class=&quot;col-avail&quot;/&gt;
+&lt;/colgroup&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;product_sku1&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value1&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value2&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value3&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value4&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value5&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value6&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value7&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value8&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value9&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value10&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value11&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value12&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value13&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value14&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value15&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 41px; top: 260px; width: 1198px; height: 52px; background-color: #ffffff; z-index: 5;&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 53px; top: 269px; width: 32px; height: 32px; background-color: white; border-radius: 2px; display: flex; align-items: center; justify-content: center; z-index: 6; box-shadow: 0 1px 3px rgba(0,0,0,0.1);&quot;&gt;
+&lt;svg fill=&quot;#00A3E0&quot; height=&quot;24&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;16&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;path d=&quot;M7 2h10v22H7z&quot; opacity=&quot;0.3&quot;&gt;&lt;/path&gt;
+&lt;path d=&quot;M9 6h6v14H9z&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 97px; top: 268px; width: 968px; height: 20px; z-index: 20;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 13.33px; font-weight: 700; color: #00A3E0;&quot;&gt;&lt;product_title2&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 97px; top: 288px; width: 965px; height: 15px; z-index: 20;&quot;&gt;
+&lt;p style=&quot;font-family: &#x27;Inter&#x27;, sans-serif; font-size: 10.67px; color: #6b7280;&quot;&gt;&lt;product_subtitle2&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;position: absolute; left: 41px; top: 312px; width: 1198px; height: 58px; z-index: 50;&quot;&gt;
+&lt;table class=&quot;data-table&quot;&gt;
+&lt;colgroup&gt;
+&lt;col class=&quot;col-title&quot;/&gt;
+&lt;col class=&quot;col-spend&quot;/&gt;
+&lt;col class=&quot;col-impr&quot;/&gt;
+&lt;col class=&quot;col-click&quot;/&gt;
+&lt;col class=&quot;col-cpc&quot;/&gt;
+&lt;col class=&quot;col-ctr&quot;/&gt;
+&lt;col class=&quot;col-cvr&quot;/&gt;
+&lt;col class=&quot;col-sale&quot;/&gt;
+&lt;col class=&quot;col-orders&quot;/&gt;
+&lt;col class=&quot;col-adroas&quot;/&gt;
+&lt;col class=&quot;col-adaov&quot;/&gt;
+&lt;col class=&quot;col-offrev&quot;/&gt;
+&lt;col class=&quot;col-offunits&quot;/&gt;
+&lt;col class=&quot;col-troas&quot;/&gt;
+&lt;col class=&quot;col-taov&quot;/&gt;
+&lt;col class=&quot;col-avail&quot;/&gt;
+&lt;/colgroup&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;product_sku2&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value16&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value17&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value18&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value19&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value20&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value21&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value22&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value23&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value24&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value25&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value26&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value27&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value28&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value29&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value30&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'></iframe>
+    <iframe title="Slide 7" srcdoc='&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;meta content=&quot;width=1280, height=720, initial-scale=1.0&quot; name=&quot;viewport&quot;/&gt;
+&lt;title&gt;Top Search Keywords Slide&lt;/title&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;style&gt;
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1280px;
+            height: 720px;
+            font-family: &#x27;Inter&#x27;, sans-serif;
+            background-color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .top-accent {
+            height: 7px;
+            background-color: #00A3E0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .logo-1ds {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            height: 28px;
+            width: auto;
+            z-index: 10;
+        }
+
+        .slide-title {
+            position: absolute;
+            left: 40px;
+            top: 24px;
+            font-family: &#x27;Inter&#x27;, sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .content-container {
+            flex: 1;
+            margin-top: 55px;
+            padding: 0 40px 10px 40px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding: 2px 4px;
+            line-height: 1;
+        }
+
+        .header-main th {
+            color: white;
+            font-size: 10px;
+            font-weight: 600;
+            text-align: center;
+            height: 18px;
+        }
+
+        .header-sub th {
+            color: white;
+            font-size: 9px;
+            font-weight: 600;
+            text-align: center;
+            height: 18px;
+        }
+
+        .bg-december { background-color: #00A3E0; }
+        .bg-november { background-color: #0088bb; }
+        .bg-october { background-color: #006d96; }
+        .bg-term { background-color: #00A3E0; }
+
+        .bg-dec-light { background-color: #F0F9FF; }
+
+        .data-row td {
+            font-size: 9px;
+            text-align: center;
+            height: 18px;
+            color: #1f2937;
+        }
+
+        .data-row td.term-cell {
+            text-align: left;
+            font-weight: 600;
+            width: 220px;
+        }
+
+        .col-metric { width: 35px; }
+        
+        .compact-header {
+            line-height: 1;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;top-accent&quot;&gt;&lt;/div&gt;
+&lt;img alt=&quot;Brand Logo&quot; class=&quot;logo-1ds&quot; src=&quot;&lt;logo1&gt;&quot;/&gt;
+&lt;h1 class=&quot;slide-title&quot;&gt;&lt;slide_title6&gt;&lt;/h1&gt;
+&lt;div class=&quot;content-container&quot;&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 240px;&quot;/&gt;
+&lt;col style=&quot;width: 45px;&quot;/&gt;&lt;col style=&quot;width: 45px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;
+&lt;col style=&quot;width: 45px;&quot;/&gt;&lt;col style=&quot;width: 45px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;
+&lt;col style=&quot;width: 45px;&quot;/&gt;&lt;col style=&quot;width: 45px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;&lt;col style=&quot;width: 35px;&quot;/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;header-main&quot;&gt;
+&lt;th class=&quot;bg-term&quot; rowspan=&quot;2&quot; style=&quot;vertical-align: middle;&quot;&gt;Customer Search Term&lt;/th&gt;
+&lt;th class=&quot;bg-december&quot; colspan=&quot;6&quot;&gt;&lt;month_label1&gt;&lt;/th&gt;
+&lt;th class=&quot;bg-november&quot; colspan=&quot;6&quot;&gt;&lt;month_label2&gt;&lt;/th&gt;
+&lt;th class=&quot;bg-october&quot; colspan=&quot;6&quot;&gt;&lt;month_label3&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;header-sub&quot;&gt;
+&lt;th class=&quot;bg-december&quot;&gt;%Spend&lt;/th&gt;
+&lt;th class=&quot;bg-december&quot;&gt;%Sales&lt;/th&gt;
+&lt;th class=&quot;bg-december&quot;&gt;CTR&lt;/th&gt;
+&lt;th class=&quot;bg-december&quot;&gt;CVR&lt;/th&gt;
+&lt;th class=&quot;bg-december&quot;&gt;CPC&lt;/th&gt;
+&lt;th class=&quot;bg-december&quot;&gt;ROAS&lt;/th&gt;
+&lt;th class=&quot;bg-november&quot;&gt;%Spend&lt;/th&gt;
+&lt;th class=&quot;bg-november&quot;&gt;%Sales&lt;/th&gt;
+&lt;th class=&quot;bg-november&quot;&gt;CTR&lt;/th&gt;
+&lt;th class=&quot;bg-november&quot;&gt;CVR&lt;/th&gt;
+&lt;th class=&quot;bg-november&quot;&gt;CPC&lt;/th&gt;
+&lt;th class=&quot;bg-november&quot;&gt;ROAS&lt;/th&gt;
+&lt;th class=&quot;bg-october&quot;&gt;%Spend&lt;/th&gt;
+&lt;th class=&quot;bg-october&quot;&gt;%Sales&lt;/th&gt;
+&lt;th class=&quot;bg-october&quot;&gt;CTR&lt;/th&gt;
+&lt;th class=&quot;bg-october&quot;&gt;CVR&lt;/th&gt;
+&lt;th class=&quot;bg-october&quot;&gt;CPC&lt;/th&gt;
+&lt;th class=&quot;bg-october&quot;&gt;ROAS&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;data-row&quot;&gt;
+&lt;td class=&quot;term-cell&quot;&gt;&lt;keyword1&gt;&lt;/td&gt;
+&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value1&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value2&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value3&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value4&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value5&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value6&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value7&gt;&lt;/td&gt;&lt;td&gt;&lt;value8&gt;&lt;/td&gt;&lt;td&gt;&lt;value9&gt;&lt;/td&gt;&lt;td&gt;&lt;value10&gt;&lt;/td&gt;&lt;td&gt;&lt;value11&gt;&lt;/td&gt;&lt;td&gt;&lt;value12&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value13&gt;&lt;/td&gt;&lt;td&gt;&lt;value14&gt;&lt;/td&gt;&lt;td&gt;&lt;value15&gt;&lt;/td&gt;&lt;td&gt;&lt;value16&gt;&lt;/td&gt;&lt;td&gt;&lt;value17&gt;&lt;/td&gt;&lt;td&gt;&lt;value18&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;data-row&quot;&gt;
+&lt;td class=&quot;term-cell&quot;&gt;&lt;keyword2&gt;&lt;/td&gt;
+&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value19&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value20&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value21&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value22&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value23&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value24&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value25&gt;&lt;/td&gt;&lt;td&gt;&lt;value26&gt;&lt;/td&gt;&lt;td&gt;&lt;value27&gt;&lt;/td&gt;&lt;td&gt;&lt;value28&gt;&lt;/td&gt;&lt;td&gt;&lt;value29&gt;&lt;/td&gt;&lt;td&gt;&lt;value30&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value31&gt;&lt;/td&gt;&lt;td&gt;&lt;value32&gt;&lt;/td&gt;&lt;td&gt;&lt;value33&gt;&lt;/td&gt;&lt;td&gt;&lt;value34&gt;&lt;/td&gt;&lt;td&gt;&lt;value35&gt;&lt;/td&gt;&lt;td&gt;&lt;value36&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;data-row&quot;&gt;
+&lt;td class=&quot;term-cell&quot;&gt;&lt;keyword3&gt;&lt;/td&gt;
+&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value37&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value38&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value39&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value40&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value41&gt;&lt;/td&gt;&lt;td class=&quot;bg-dec-light&quot;&gt;&lt;value42&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value43&gt;&lt;/td&gt;&lt;td&gt;&lt;value44&gt;&lt;/td&gt;&lt;td&gt;&lt;value45&gt;&lt;/td&gt;&lt;td&gt;&lt;value46&gt;&lt;/td&gt;&lt;td&gt;&lt;value47&gt;&lt;/td&gt;&lt;td&gt;&lt;value48&gt;&lt;/td&gt;
+&lt;td&gt;&lt;value49&gt;&lt;/td&gt;&lt;td&gt;&lt;value50&gt;&lt;/td&gt;&lt;td&gt;&lt;value51&gt;&lt;/td&gt;&lt;td&gt;&lt;value52&gt;&lt;/td&gt;&lt;td&gt;&lt;value53&gt;&lt;/td&gt;&lt;td&gt;&lt;value54&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'></iframe>
+    <iframe title="Slide 8" srcdoc='&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot;/&gt;
+&lt;title&gt;PI GV And SOV Trend&lt;/title&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;style&gt;
+        body { margin: 0; padding: 0; background-color: #333; height: 100vh; display: flex; justify-content: center; align-items: center; font-family: &#x27;Inter&#x27;, sans-serif; }
+        .slide-container { width: 1280px; height: 720px; background-color: #ffffff; position: relative; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5); display: flex; flex-direction: column; }
+        .top-accent { height: 7px; background-color: #00A3E0; width: 100%; flex-shrink: 0; }
+        .logo-1ds { position: absolute; top: 20px; right: 40px; height: 28px; width: auto; z-index: 10; }
+        
+        .custom-table { border-collapse: collapse; width: 100%; font-size: 10px; }
+        .custom-table th { background-color: #00A3E0; color: white; padding: 2px 4px; font-weight: 600; text-align: center; border: 1px solid #e5e7eb; height: 28px; vertical-align: middle; white-space: nowrap; }
+        .custom-table td { padding: 2px 4px; border: 1px solid #e5e7eb; text-align: center; color: #1f2937; height: 22px; vertical-align: middle; white-space: nowrap; }
+        .section-header td { background-color: #F3F4F6; color: #00A3E0; font-weight: 700; text-align: left; padding-left: 10px; border-left: 4px solid #00A3E0; }
+        .first-col { font-weight: 600; text-align: left; padding-left: 8px; color: #374151; }
+        
+        .chart-box { background: #fff; border: 1px dashed #9CA3AF; border-radius: 8px; padding: 8px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #6B7280; font-size: 12px; }
+        .slide-title { font-size: 32px; font-weight: 700; color: #111827; }
+        
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;slide-container&quot;&gt;
+&lt;div class=&quot;top-accent&quot;&gt;&lt;/div&gt;
+&lt;img alt=&quot;Brand Logo&quot; class=&quot;logo-1ds&quot; src=&quot;&lt;logo1&gt;&quot;/&gt;
+&lt;div class=&quot;px-10 pt-6 pb-2&quot;&gt;
+&lt;h1 class=&quot;slide-title&quot;&gt;&lt;slide_title7&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex px-10 flex-1 gap-4 pb-6 overflow-hidden&quot;&gt;
+&lt;div class=&quot;w-5/12 flex flex-col gap-3 h-full justify-between&quot;&gt;
+&lt;div class=&quot;chart-box flex-1 relative&quot; style=&quot;min-height: 0;&quot;&gt;
+&lt;h3 class=&quot;text-xs font-bold text-gray-700 mb-1&quot;&gt;&lt;chart_title1&gt;&lt;/h3&gt;
+&lt;div class=&quot;w-full h-full flex items-center justify-center&quot;&gt;Chart Placeholder&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;chart-box flex-1 relative&quot; style=&quot;min-height: 0;&quot;&gt;
+&lt;h3 class=&quot;text-xs font-bold text-gray-700 mb-1&quot;&gt;&lt;chart_title2&gt;&lt;/h3&gt;
+&lt;div class=&quot;w-full h-full flex items-center justify-center&quot;&gt;Chart Placeholder&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;chart-box flex-1 relative&quot; style=&quot;min-height: 0;&quot;&gt;
+&lt;h3 class=&quot;text-xs font-bold text-gray-700 mb-1&quot;&gt;&lt;chart_title3&gt;&lt;/h3&gt;
+&lt;div class=&quot;w-full h-full flex items-center justify-center&quot;&gt;Chart Placeholder&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;w-7/12 h-full overflow-hidden relative bg-white rounded-lg border border-gray-200 p-1 flex flex-col&quot;&gt;
+&lt;div class=&quot;px-2 py-1 bg-gray-50 border-b border-gray-200 mb-1&quot;&gt;
+&lt;h3 class=&quot;text-sm font-bold text-gray-700&quot;&gt;&lt;table_title1&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-1 overflow-auto pr-1&quot;&gt;
+&lt;table class=&quot;custom-table&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 12%&quot;/&gt;
+&lt;col style=&quot;width: 16%&quot;/&gt;
+&lt;col style=&quot;width: 14%&quot;/&gt;
+&lt;col style=&quot;width: 12%&quot;/&gt;
+&lt;col style=&quot;width: 14%&quot;/&gt;
+&lt;col style=&quot;width: 14%&quot;/&gt;
+&lt;col style=&quot;width: 14%&quot;/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Month&lt;/th&gt;
+&lt;th&gt;Organic SOV&lt;/th&gt;
+&lt;th&gt;Ad SOV&lt;/th&gt;
+&lt;th&gt;CPC&lt;/th&gt;
+&lt;th&gt;CVR&lt;/th&gt;
+&lt;th&gt;CTR&lt;/th&gt;
+&lt;th&gt;ACOS&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;section-header&quot;&gt;&lt;td colspan=&quot;7&quot;&gt;&lt;segment_label1&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;first-col&quot;&gt;&lt;month1&gt;&lt;/td&gt;&lt;td&gt;&lt;value1&gt;&lt;/td&gt;&lt;td&gt;&lt;value2&gt;&lt;/td&gt;&lt;td&gt;&lt;value3&gt;&lt;/td&gt;&lt;td&gt;&lt;value4&gt;&lt;/td&gt;&lt;td&gt;&lt;value5&gt;&lt;/td&gt;&lt;td&gt;&lt;value6&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;first-col&quot;&gt;&lt;month2&gt;&lt;/td&gt;&lt;td&gt;&lt;value7&gt;&lt;/td&gt;&lt;td&gt;&lt;value8&gt;&lt;/td&gt;&lt;td&gt;&lt;value9&gt;&lt;/td&gt;&lt;td&gt;&lt;value10&gt;&lt;/td&gt;&lt;td&gt;&lt;value11&gt;&lt;/td&gt;&lt;td&gt;&lt;value12&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr class=&quot;section-header&quot;&gt;&lt;td colspan=&quot;7&quot;&gt;&lt;segment_label2&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;first-col&quot;&gt;&lt;month3&gt;&lt;/td&gt;&lt;td&gt;&lt;value13&gt;&lt;/td&gt;&lt;td&gt;&lt;value14&gt;&lt;/td&gt;&lt;td&gt;&lt;value15&gt;&lt;/td&gt;&lt;td&gt;&lt;value16&gt;&lt;/td&gt;&lt;td&gt;&lt;value17&gt;&lt;/td&gt;&lt;td&gt;&lt;value18&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;first-col&quot;&gt;&lt;month4&gt;&lt;/td&gt;&lt;td&gt;&lt;value19&gt;&lt;/td&gt;&lt;td&gt;&lt;value20&gt;&lt;/td&gt;&lt;td&gt;&lt;value21&gt;&lt;/td&gt;&lt;td&gt;&lt;value22&gt;&lt;/td&gt;&lt;td&gt;&lt;value23&gt;&lt;/td&gt;&lt;td&gt;&lt;value24&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr class=&quot;section-header&quot;&gt;&lt;td colspan=&quot;7&quot;&gt;&lt;segment_label3&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;first-col&quot;&gt;&lt;month5&gt;&lt;/td&gt;&lt;td&gt;&lt;value25&gt;&lt;/td&gt;&lt;td&gt;&lt;value26&gt;&lt;/td&gt;&lt;td&gt;&lt;value27&gt;&lt;/td&gt;&lt;td&gt;&lt;value28&gt;&lt;/td&gt;&lt;td&gt;&lt;value29&gt;&lt;/td&gt;&lt;td&gt;&lt;value30&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;first-col&quot;&gt;&lt;month6&gt;&lt;/td&gt;&lt;td&gt;&lt;value31&gt;&lt;/td&gt;&lt;td&gt;&lt;value32&gt;&lt;/td&gt;&lt;td&gt;&lt;value33&gt;&lt;/td&gt;&lt;td&gt;&lt;value34&gt;&lt;/td&gt;&lt;td&gt;&lt;value35&gt;&lt;/td&gt;&lt;td&gt;&lt;value36&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'></iframe>
+</body>
+</html>

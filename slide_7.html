@@ -50,7 +50,7 @@
 
         .content-container {
             flex: 1;
-            margin-top: 55px; /* Space for title + logo area */
+            margin-top: 55px;
             padding: 0 40px 10px 40px;
             display: flex;
             flex-direction: column;
@@ -72,7 +72,6 @@
             line-height: 1;
         }
 
-        /* Header Styles */
         .header-main th {
             color: white;
             font-size: 10px;
@@ -89,7 +88,6 @@
             height: 18px;
         }
 
-        /* Column Colors */
         .bg-december { background-color: #00A3E0; }
         .bg-november { background-color: #0088bb; }
         .bg-october { background-color: #006d96; }
@@ -97,73 +95,58 @@
 
         .bg-dec-light { background-color: #F0F9FF; }
 
-        /* Data Styles */
         .data-row td {
             font-size: 9px;
             text-align: center;
-            height: 18px; /* Fixed row height to fit 20 rows */
+            height: 18px;
             color: #1f2937;
         }
 
         .data-row td.term-cell {
             text-align: left;
             font-weight: 600;
-            width: 220px; /* Fixed width for search terms */
+            width: 220px;
         }
 
-        /* Metric Columns Widths */
-        .col-metric { width: 35px; } /* Adjust based on remaining space */
+        .col-metric { width: 35px; }
         
-        /* Compact layout adjustments */
         .compact-header {
             line-height: 1;
         }
     </style>
 </head>
 <body>
-<!-- Top Accent Bar -->
 <div class="top-accent"></div>
-<!-- Logo -->
-<img alt="1DS Logo" class="logo-1ds" src="https://www.genspark.ai/api/files/s/Tg0b2MKk"/>
-<!-- Title -->
-<h1 class="slide-title">Top Search Keywords</h1>
-<!-- Main Content -->
+<img alt="Brand Logo" class="logo-1ds" src="<logo1>"/>
+<h1 class="slide-title"><slide_title6></h1>
 <div class="content-container">
 <table>
 <colgroup>
-<col style="width: 240px;"/> <!-- Search Term -->
-<!-- December -->
+<col style="width: 240px;"/>
 <col style="width: 45px;"/><col style="width: 45px;"/><col style="width: 35px;"/><col style="width: 35px;"/><col style="width: 35px;"/><col style="width: 35px;"/>
-<!-- November -->
 <col style="width: 45px;"/><col style="width: 45px;"/><col style="width: 35px;"/><col style="width: 35px;"/><col style="width: 35px;"/><col style="width: 35px;"/>
-<!-- October -->
 <col style="width: 45px;"/><col style="width: 45px;"/><col style="width: 35px;"/><col style="width: 35px;"/><col style="width: 35px;"/><col style="width: 35px;"/>
 </colgroup>
 <thead>
-<!-- Month Headers -->
 <tr class="header-main">
 <th class="bg-term" rowspan="2" style="vertical-align: middle;">Customer Search Term</th>
-<th class="bg-december" colspan="6">December '25</th>
-<th class="bg-november" colspan="6">November '25</th>
-<th class="bg-october" colspan="6">October '25</th>
+<th class="bg-december" colspan="6"><month_label1></th>
+<th class="bg-november" colspan="6"><month_label2></th>
+<th class="bg-october" colspan="6"><month_label3></th>
 </tr>
-<!-- Metric Headers -->
 <tr class="header-sub">
-<!-- December -->
 <th class="bg-december">%Spend</th>
 <th class="bg-december">%Sales</th>
 <th class="bg-december">CTR</th>
 <th class="bg-december">CVR</th>
 <th class="bg-december">CPC</th>
 <th class="bg-december">ROAS</th>
-<!-- November -->
 <th class="bg-november">%Spend</th>
 <th class="bg-november">%Sales</th>
 <th class="bg-november">CTR</th>
 <th class="bg-november">CVR</th>
 <th class="bg-november">CPC</th>
 <th class="bg-november">ROAS</th>
-<!-- October -->
 <th class="bg-october">%Spend</th>
 <th class="bg-october">%Sales</th>
 <th class="bg-october">CTR</th>
@@ -173,145 +156,23 @@
 </tr>
 </thead>
 <tbody>
-<!-- Row 1 -->
 <tr class="data-row">
-<td class="term-cell">coconut oil for hair</td>
-<td class="bg-dec-light">23%</td><td class="bg-dec-light">14%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">18%</td><td class="bg-dec-light">9.9</td><td class="bg-dec-light">3.5</td>
-<td>29%</td><td>15%</td><td>1%</td><td>14%</td><td>13.3</td><td>2.2</td>
-<td>35%</td><td>16%</td><td>1%</td><td>27%</td><td>20</td><td>2.2</td>
+<td class="term-cell"><keyword1></td>
+<td class="bg-dec-light"><value1></td><td class="bg-dec-light"><value2></td><td class="bg-dec-light"><value3></td><td class="bg-dec-light"><value4></td><td class="bg-dec-light"><value5></td><td class="bg-dec-light"><value6></td>
+<td><value7></td><td><value8></td><td><value9></td><td><value10></td><td><value11></td><td><value12></td>
+<td><value13></td><td><value14></td><td><value15></td><td><value16></td><td><value17></td><td><value18></td>
 </tr>
-<!-- Row 2 -->
 <tr class="data-row">
-<td class="term-cell">parachute hair oil</td>
-<td class="bg-dec-light">18%</td><td class="bg-dec-light">27%</td><td class="bg-dec-light">1%</td><td class="bg-dec-light">33%</td><td class="bg-dec-light">6.9</td><td class="bg-dec-light">8.1</td>
-<td>10%</td><td>25%</td><td>2%</td><td>37%</td><td>6.1</td><td>10.4</td>
-<td>18%</td><td>45%</td><td>2%</td><td>48%</td><td>6.3</td><td>12.2</td>
+<td class="term-cell"><keyword2></td>
+<td class="bg-dec-light"><value19></td><td class="bg-dec-light"><value20></td><td class="bg-dec-light"><value21></td><td class="bg-dec-light"><value22></td><td class="bg-dec-light"><value23></td><td class="bg-dec-light"><value24></td>
+<td><value25></td><td><value26></td><td><value27></td><td><value28></td><td><value29></td><td><value30></td>
+<td><value31></td><td><value32></td><td><value33></td><td><value34></td><td><value35></td><td><value36></td>
 </tr>
-<!-- Row 3 -->
 <tr class="data-row">
-<td class="term-cell">parachute ayurvedic hair oil</td>
-<td class="bg-dec-light">15%</td><td class="bg-dec-light">31%</td><td class="bg-dec-light">3%</td><td class="bg-dec-light">39%</td><td class="bg-dec-light">6.1</td><td class="bg-dec-light">11.1</td>
-<td>7%</td><td>22%</td><td>8%</td><td>36%</td><td>4.9</td><td>12.8</td>
-<td>8%</td><td>15%</td><td>3%</td><td>42%</td><td>7.8</td><td>9.6</td>
-</tr>
-<!-- Row 4 -->
-<tr class="data-row">
-<td class="term-cell">coconut oil</td>
-<td class="bg-dec-light">9%</td><td class="bg-dec-light">7%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">25%</td><td class="bg-dec-light">11.8</td><td class="bg-dec-light">4</td>
-<td>9%</td><td>5%</td><td>0%</td><td>24%</td><td>17.4</td><td>2.6</td>
-<td>11%</td><td>5%</td><td>0%</td><td>30%</td><td>21.9</td><td>2.2</td>
-</tr>
-<!-- Row 5 -->
-<tr class="data-row">
-<td class="term-cell">hair oil</td>
-<td class="bg-dec-light">8%</td><td class="bg-dec-light">2%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">20%</td><td class="bg-dec-light">23.3</td><td class="bg-dec-light">1.4</td>
-<td>5%</td><td>2%</td><td>0%</td><td>14%</td><td>18.6</td><td>1.7</td>
-<td>0%</td><td>0%</td><td>1%</td><td>27%</td><td>2.6</td><td>15.4</td>
-</tr>
-<!-- Row 6 -->
-<tr class="data-row">
-<td class="term-cell">ayurvedic hair oil</td>
-<td class="bg-dec-light">7%</td><td class="bg-dec-light">2%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">18%</td><td class="bg-dec-light">24.4</td><td class="bg-dec-light">1.4</td>
-<td>10%</td><td>2%</td><td>0%</td><td>12%</td><td>30</td><td>0.9</td>
-<td>6%</td><td>1%</td><td>0%</td><td>38%</td><td>54.1</td><td>1.1</td>
-</tr>
-<!-- Row 7 -->
-<tr class="data-row">
-<td class="term-cell">parachute ayurvedic oil</td>
-<td class="bg-dec-light">3%</td><td class="bg-dec-light">2%</td><td class="bg-dec-light">4%</td><td class="bg-dec-light">28%</td><td class="bg-dec-light">12.9</td><td class="bg-dec-light">4</td>
-<td>4%</td><td>3%</td><td>4%</td><td>24%</td><td>11.7</td><td>3.5</td>
-<td>2%</td><td>1%</td><td>9%</td><td>34%</td><td>15.2</td><td>3.8</td>
-</tr>
-<!-- Row 8 -->
-<tr class="data-row">
-<td class="term-cell">parachute advansed parachute hair oil</td>
-<td class="bg-dec-light">3%</td><td class="bg-dec-light">2%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">23%</td><td class="bg-dec-light">9.3</td><td class="bg-dec-light">3.9</td>
-<td>4%</td><td>3%</td><td>0%</td><td>21%</td><td>12.2</td><td>2.9</td>
-<td>3%</td><td>2%</td><td>0%</td><td>21%</td><td>9.1</td><td>3.8</td>
-</tr>
-<!-- Row 9 -->
-<tr class="data-row">
-<td class="term-cell">parachute coconut oil</td>
-<td class="bg-dec-light">3%</td><td class="bg-dec-light">2%</td><td class="bg-dec-light">1%</td><td class="bg-dec-light">23%</td><td class="bg-dec-light">8.8</td><td class="bg-dec-light">4.5</td>
-<td>1%</td><td>3%</td><td>1%</td><td>76%</td><td>6.8</td><td>19.8</td>
-<td>2%</td><td>1%</td><td>0%</td><td>22%</td><td>7.9</td><td>4.6</td>
-</tr>
-<!-- Row 10 -->
-<tr class="data-row">
-<td class="term-cell">parachute oil</td>
-<td class="bg-dec-light">2%</td><td class="bg-dec-light">3%</td><td class="bg-dec-light">1%</td><td class="bg-dec-light">35%</td><td class="bg-dec-light">8.9</td><td class="bg-dec-light">6.7</td>
-<td>2%</td><td>2%</td><td>1%</td><td>22%</td><td>11.8</td><td>3.4</td>
-<td>2%</td><td>2%</td><td>1%</td><td>30%</td><td>8.7</td><td>5.5</td>
-</tr>
-<!-- Row 11 -->
-<tr class="data-row">
-<td class="term-cell">parachute advansed ayurvedic coconut...</td>
-<td class="bg-dec-light">2%</td><td class="bg-dec-light">1%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">20%</td><td class="bg-dec-light">9.5</td><td class="bg-dec-light">3.7</td>
-<td>0%</td><td>1%</td><td>4%</td><td>28%</td><td>6.2</td><td>8.8</td>
-<td>0%</td><td>0%</td><td>3%</td><td>13%</td><td>5.1</td><td>8.4</td>
-</tr>
-<!-- Row 12 -->
-<tr class="data-row">
-<td class="term-cell">parachute coconut oil ayurvedic</td>
-<td class="bg-dec-light">2%</td><td class="bg-dec-light">1%</td><td class="bg-dec-light">2%</td><td class="bg-dec-light">16%</td><td class="bg-dec-light">6.8</td><td class="bg-dec-light">4.1</td>
-<td>2%</td><td>3%</td><td>1%</td><td>24%</td><td>8.3</td><td>5.2</td>
-<td>0%</td><td>0%</td><td>20%</td><td>0%</td><td>6.6</td><td>11.1</td>
-</tr>
-<!-- Row 13 -->
-<tr class="data-row">
-<td class="term-cell">parachute</td>
-<td class="bg-dec-light">2%</td><td class="bg-dec-light">2%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">45%</td><td class="bg-dec-light">10.2</td><td class="bg-dec-light">7.7</td>
-<td>0%</td><td>1%</td><td>1%</td><td>42%</td><td>7.6</td><td>9.2</td>
-<td>1%</td><td>2%</td><td>0%</td><td>69%</td><td>8.5</td><td>12.5</td>
-</tr>
-<!-- Row 14 -->
-<tr class="data-row">
-<td class="term-cell">parachute coconut hair oil</td>
-<td class="bg-dec-light">1%</td><td class="bg-dec-light">2%</td><td class="bg-dec-light">1%</td><td class="bg-dec-light">27%</td><td class="bg-dec-light">7.7</td><td class="bg-dec-light">6.1</td>
-<td>0%</td><td>2%</td><td>1%</td><td>54%</td><td>5.9</td><td>14.9</td>
-<td>0%</td><td>1%</td><td>1%</td><td>54%</td><td>7.1</td><td>11.8</td>
-</tr>
-<!-- Row 15 -->
-<tr class="data-row">
-<td class="term-cell">ayurvedic oil</td>
-<td class="bg-dec-light">1%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">13%</td><td class="bg-dec-light">20.4</td><td class="bg-dec-light">1.1</td>
-<td>2%</td><td>0%</td><td>0%</td><td>2%</td><td>24.6</td><td>0.4</td>
-<td>1%</td><td>0%</td><td>4%</td><td>86%</td><td>47.3</td><td>3.1</td>
-</tr>
-<!-- Row 16 -->
-<tr class="data-row">
-<td class="term-cell">parachute coconut oil 1 litre</td>
-<td class="bg-dec-light">1%</td><td class="bg-dec-light">1%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">21%</td><td class="bg-dec-light">7.3</td><td class="bg-dec-light">4.7</td>
-<td>3%</td><td>2%</td><td>0%</td><td>18%</td><td>13.4</td><td>2.5</td>
-<td>2%</td><td>2%</td><td>0%</td><td>24%</td><td>8</td><td>4.9</td>
-</tr>
-<!-- Row 17 -->
-<tr class="data-row">
-<td class="term-cell">coconut ayurvedic hair oil</td>
-<td class="bg-dec-light">0%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">5%</td><td class="bg-dec-light">23%</td><td class="bg-dec-light">7.2</td><td class="bg-dec-light">5.5</td>
-<td>4%</td><td>3%</td><td>8%</td><td>30%</td><td>12.3</td><td>3.9</td>
-<td>1%</td><td>0%</td><td>3%</td><td>13%</td><td>14.4</td><td>1.4</td>
-</tr>
-<!-- Row 18 -->
-<tr class="data-row">
-<td class="term-cell">parachute coconut oil 300</td>
-<td class="bg-dec-light">0%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">11%</td><td class="bg-dec-light">11</td><td class="bg-dec-light">1.5</td>
-<td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>9.1</td><td>0</td>
-<td>3%</td><td>1%</td><td>0%</td><td>18%</td><td>14.2</td><td>2</td>
-</tr>
-<!-- Row 19 -->
-<tr class="data-row">
-<td class="term-cell">bhringraj oil for hair growth</td>
-<td class="bg-dec-light">0%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">0</td><td class="bg-dec-light">0</td>
-<td>2%</td><td>1%</td><td>0%</td><td>22%</td><td>16.6</td><td>2.3</td>
-<td>4%</td><td>1%</td><td>0%</td><td>11%</td><td>32.7</td><td>0.6</td>
-</tr>
-<!-- Row 20 -->
-<tr class="data-row">
-<td class="term-cell">hot oil</td>
-<td class="bg-dec-light">0%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">0%</td><td class="bg-dec-light">0</td><td class="bg-dec-light">0</td>
-<td>5%</td><td>6%</td><td>2%</td><td>35%</td><td>11.4</td><td>5.5</td>
-<td>2%</td><td>2%</td><td>1%</td><td>27%</td><td>12.7</td><td>3.6</td>
+<td class="term-cell"><keyword3></td>
+<td class="bg-dec-light"><value37></td><td class="bg-dec-light"><value38></td><td class="bg-dec-light"><value39></td><td class="bg-dec-light"><value40></td><td class="bg-dec-light"><value41></td><td class="bg-dec-light"><value42></td>
+<td><value43></td><td><value44></td><td><value45></td><td><value46></td><td><value47></td><td><value48></td>
+<td><value49></td><td><value50></td><td><value51></td><td><value52></td><td><value53></td><td><value54></td>
 </tr>
 </tbody>
 </table>
